@@ -11,143 +11,860 @@
 </head>
 <body>
 
-  <nav class="dr-nav" id="mainNav">
-    <div class="dr-nav-container">
-      <a href="#" class="dr-logo">
+  <nav class="io-nav" id="mainNav">
+    <div class="io-nav-container">
+      <a href="#" class="io-logo">
         <img src="iostring.png" alt="iostring logo" style="height: 32px; width: auto; display: block;">
       </a>
-      <ul class="dr-nav-links">
+      <ul class="io-nav-links">
+        <li><a href="#transformation" class="nav-item">Transformation</a></li>
         <li><a href="#services" class="nav-item">Services</a></li>
-        <li><a href="#netherlands" class="nav-item">NL Delivery Hub</a></li>
+        <li><a href="#success" class="nav-item">Client Success</a></li>
+        <li><a href="#netherlands" class="nav-item">Netherlands Hub</a></li>
+        <li><a href="#story" class="nav-item">Our Story</a></li>
       </ul>
-      <a href="mailto:hello@iostring.com" class="dr-nav-cta">Let's Talk</a>
+      <a href="https://www.linkedin.com/company/iostring/" target="_blank" rel="noopener" class="io-nav-cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        Let's Talk
+      </a>
     </div>
   </nav>
 
-  <header class="dr-hero">
-    <div class="reveal-node">
-      <span class="dr-hero-tagline">CHAPTER 01 // ORG AGILITY</span>
-      <h1>Your partner in <em>digital & agile</em> transformation.</h1>
-      <p>We build resilient distributed enterprise operating systems across cross-border product frameworks.</p>
-      <div class="dr-hero-actions">
-        <a href="#services" class="dr-btn-primary">Explore Specs</a>
-        <a href="mailto:hello@iostring.com" class="dr-btn-secondary">Get in Touch</a>
+  <header class="io-hero" id="hero">
+    <div class="io-reveal">
+      <span class="io-chapter-label">Chapter one</span>
+      <h1>Your partner in <br><em>digital & agile</em><br>transformation.</h1>
+      <p class="io-hero-sub">We help organisations navigate digital transformation through agile business practices, technology adoption, and deep human coaching, from startups to enterprise, education to financial services.</p>
+      
+      <div class="io-hero-tags">
+        <span class="io-hero-tag t1">Digital Transformation</span>
+        <span class="io-hero-tag t2">Agile Business</span>
+        <span class="io-hero-tag t3">Coaching</span>
+      </div>
+
+      <div class="io-hero-actions">
+        <a href="#services" class="io-btn-primary">Explore Services</a>
+        <a href="#success" class="io-btn-text">See Client Stories</a>
       </div>
     </div>
-    <div class="dr-hero-graphic reveal-node delay-1">
-      <div class="dr-chevron-display">>>></div>
-      <div class="dr-hero-metric">3×</div>
-      <div class="dr-hero-metric-label">Average system feature velocity increase</div>
+    
+    <div class="io-hero-art io-reveal-right io-delay-1">
+      <div class="dr-chevron-overlay">>>></div>
+      <div class="io-hero-img-badge">
+        <div class="badge-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b00ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+        <div class="badge-text"><strong>3×</strong>Average delivery speed increase</div>
+      </div>
     </div>
   </header>
 
-  <section class="dr-section dr-section-bg-alt" id="services">
-    <div class="dr-container">
-      <span class="dr-pretitle">SPECIFICATION INDEX</span>
-      <h2 class="dr-maintitle">Our Practice Areas</h2>
-      <p class="dr-section-sub">Modular structural capabilities engineered to deliver high-performance architecture adjustments continuously.</p>
-
-      <div class="dr-filter-controls reveal-node">
-        <button class="dr-filter-btn active" data-filter="all">All Architecture</button>
-        <button class="dr-filter-btn" data-filter="dx">Digital Transformation</button>
-        <button class="dr-filter-btn" data-filter="agile">Agile Architecture</button>
-        <button class="dr-filter-btn" data-filter="coaching">Human Systems</button>
-      </div>
-
-      <div class="dr-services-grid" id="servicesGrid">
-        <div class="dr-service-card reveal-node" data-category="dx">
-          <div class="card-telemetry">>>> DX_ROADMAP</div>
-          <h3>Digital Transformation Strategy</h3>
-          <p>Co-creating modern development blueprints to safely shift enterprise workflows to cloud-native platforms.</p>
-        </div>
-        <div class="dr-service-card reveal-node delay-1" data-category="agile">
-          <div class="card-telemetry">>>> SCALE_SYS</div>
-          <h3>Enterprise Agile Architecture</h3>
-          <p>Redesigning corporate execution workflows across distributed delivery units to optimize value stream tracking.</p>
-        </div>
-        <div class="dr-service-card reveal-node delay-2" data-category="coaching">
-          <div class="card-telemetry">>>> HUMAN_ENG</div>
-          <h3>Embedded Performance Coaching</h3>
-          <p>Deploying specialized technical delivery consultants directly into squads to cement sustainable deployment cadences.</p>
-        </div>
-      </div>
+  <div class="io-marquee-strip" aria-hidden="true">
+    <div class="io-marquee-inner">
+      <span>Digital Transformation</span><span class="accent">•</span>
+      <span>Agile Business</span><span class="accent">•</span>
+      <span>Technology Adoption</span><span class="accent">•</span>
+      <span>Scrum Mastery</span><span class="accent">•</span>
+      <span>Change Management</span><span class="accent">•</span>
+      <span>Agile Coaching</span><span class="accent">•</span>
+      <span>People Over Process</span><span class="accent">•</span>
+      <span>Outcomes Over Outputs</span><span class="accent">•</span>
+      <span>Digital Transformation</span><span class="accent">•</span>
+      <span>Agile Business</span><span class="accent">•</span>
+      <span>Technology Adoption</span><span class="accent">•</span>
+      <span>Scrum Mastery</span><span class="accent">•</span>
+      <span>Change Management</span><span class="accent">•</span>
+      <span>Agile Coaching</span><span class="accent">•</span>
+      <span>People Over Process</span><span class="accent">•</span>
+      <span>Outcomes Over Outputs</span><span class="accent">•</span>
     </div>
-  </section>
+  </div>
 
-  <section class="dr-section" id="netherlands">
-    <div class="dr-container">
-      <span class="dr-pretitle">CROSS-BORDER TELEMETRY</span>
-      <h2 class="dr-maintitle">The Offshore Pipeline</h2>
-      <p class="dr-section-sub">Synchronizing product engineering alignment completely between European networks and Indian engineering hubs.</p>
+  <section class="io-section" id="transformation">
+    <span class="io-chapter-mark animate-mark">02</span>
+    <div class="io-container">
+      <div class="io-section-label io-reveal">Chapter two</div>
+      <h2 class="io-section-title io-reveal io-delay-1">Three pillars. <em>One partner.</em></h2>
+      <p class="io-section-sub io-reveal io-delay-2">Digital transformation is not a technology project. It is a people and culture journey. We bring three integrated capabilities to make it stick, from strategy to the team stand-up.</p>
       
-      <div class="dr-grid-bridge reveal-node">
-        <div class="hub-node">
-          <div class="node-meta">OFFSHORE PRODUCTION BASE</div>
-          <h3>Pune, India</h3>
-          <ul class="node-specs">
-            <li>Engineering Scale & Deep Development</li>
-            <li>Embedded Agile Ceremonies & Quality Assurance</li>
-            <li>Technical Agility Centers of Excellence</li>
-          </ul>
+      <div class="io-pillars-grid">
+        <div class="io-pillar p-teal io-reveal io-delay-1">
+          <div class="io-pillar-body">
+            <div class="io-pillar-num">01</div>
+            <h3 class="io-pillar-title">Digital Transformation</h3>
+            <p class="io-pillar-desc">We help organisations define their digital roadmap, select the right technologies, and embed new ways of working across every function, not just IT.</p>
+            <div class="io-pillar-tags">
+              <span class="io-pillar-tag">Technology Roadmap</span>
+              <span class="io-pillar-tag">Change Leadership</span>
+              <span class="io-pillar-tag">Digital Culture</span>
+            </div>
+          </div>
         </div>
 
-        <div class="hub-connector-matrix">
-          <div class="core-logo-badge">io</div>
-          <div class="matrix-status">PIPELINE ACTIVE</div>
+        <div class="io-pillar p-blue io-reveal io-delay-2">
+          <div class="io-pillar-body">
+            <div class="io-pillar-num">02</div>
+            <h3 class="io-pillar-title">Agile Business Transformation</h3>
+            <p class="io-pillar-desc">Agility is not a software methodology, it is a business strategy. We redesign how your organisation plans, prioritises, and delivers value at every layer.</p>
+            <div class="io-pillar-tags">
+              <span class="io-pillar-tag">SAFe / LeSS / Scrum</span>
+              <span class="io-pillar-tag">OKRs</span>
+              <span class="io-pillar-tag">Portfolio Agility</span>
+            </div>
+          </div>
         </div>
 
-        <div class="hub-node">
-          <div class="node-meta">STRATEGY & REGULATORY BASE</div>
-          <h3>Utrecht, Netherlands</h3>
-          <ul class="node-specs">
-            <li>Product Leadership & Strategy Design</li>
-            <li>Digital Transformation Execution Blueprints</li>
-            <li>Cross-Border PI Synchronization Systems</li>
-          </ul>
+        <div class="io-pillar p-amber io-reveal io-delay-3">
+          <div class="io-pillar-body">
+            <div class="io-pillar-num">03</div>
+            <h3 class="io-pillar-title">Agile Coaching</h3>
+            <p class="io-pillar-desc">Frameworks without people-first coaching fail. Our embedded coaches work alongside your teams, building the habits, trust, and skills that make transformation irreversible.</p>
+            <div class="io-pillar-tags">
+              <span class="io-pillar-tag">Team Coaching</span>
+              <span class="io-pillar-tag">Leadership Mentoring</span>
+              <span class="io-pillar-tag">SM Training</span>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="dr-stats-row reveal-node">
-        <div class="dr-stat-cell"><div class="dr-stat-num">120+</div><div class="dr-stat-label">Systems Transformed</div></div>
-        <div class="dr-stat-cell"><div class="dr-stat-num">94%</div><div class="dr-stat-label">LMS Active Adoption</div></div>
-        <div class="dr-stat-cell"><div class="dr-stat-num">4.6</div><div class="dr-stat-label">Maturity Score Rating</div></div>
-        <div class="dr-stat-cell"><div class="dr-stat-num">100%</div><div class="dr-stat-label">People-First Blueprint</div></div>
       </div>
     </div>
   </section>
 
-  <footer class="dr-footer">
-    <div class="dr-footer-container">
-      <div class="dr-footer-brand">
-        <img src="iostring.png" alt="iostring logo" style="height: 28px; width: auto; display: block; filter: brightness(0) invert(1); margin-bottom: 20px;">
-        <p>Enterprise digital transformation architecture and decentralized agile governance engine strategies.</p>
-      </div>
-      <div>
+  <section class="io-section io-section-bg-alt io-dx-section">
+    <span class="io-chapter-mark left-mark">03</span>
+    <div class="io-container">
+      <div class="io-section-label io-reveal style-teal">Chapter three</div>
+      <h2 class="io-section-title io-reveal io-delay-1 max-600">Digital transformation is <em>cultural, not technical.</em></h2>
+      <p class="io-section-sub io-reveal io-delay-2">Most digital transformations fail not because of the technology, but because organisations underestimate the human change required. We focus on both, simultaneously.</p>
+      
+      <div class="io-dx-layout">
+        <div class="io-reveal-left explanation-space">
+          <p class="dx-lead-text">We help organisations move from <strong>legacy processes to digital-first workflows</strong> without losing the institutional knowledge and team cohesion that took years to build.</p>
+          <p class="dx-lead-text">Agile digital transformation combines iterative delivery with continuous learning, so your organisation stays responsive to change instead of reacting to it after the damage is done.</p>
+        </div>
         
-        <h5>Capabilities</h5>
-        <ul>
-          <li><a href="#services">Digital Strategy</a></li>
-          <li><a href="#services">Agile Operating Models</a></li>
-          <li><a href="#services">Embedded Coaching</a></li>
-        </ul>
+        <div class="io-reveal-right io-delay-1 io-dx-points">
+          <div class="io-dx-point">
+            <div class="io-dx-point-icon">01</div>
+            <div>
+              <h5>Digital Readiness Assessment</h5>
+              <p>We map your current state across people, process, technology, and culture, then build a prioritised roadmap that aligns with your business outcomes.</p>
+            </div>
+          </div>
+
+          <div class="io-dx-point">
+            <div class="io-dx-point-icon">02</div>
+            <div>
+              <h5>Iterative Technology Rollout</h5>
+              <p>Adopting ERP, CRM, LMS, or AI tools in a single big-bang deployment is the fastest way to fail. We use sprint-based adoption cycles that let teams learn and adapt.</p>
+            </div>
+          </div>
+
+          <div class="io-dx-point">
+            <div class="io-dx-point-icon">03</div>
+            <div>
+              <h5>Change Leadership Coaching</h5>
+              <p>Leaders set the tone for digital adoption. We coach your C-suite and middle management to model the behaviours that make transformation contagious.</p>
+            </div>
+          </div>
+
+          <div class="io-dx-point">
+            <div class="io-dx-point-icon">04</div>
+            <div>
+              <h5>Adoption Metrics & OKRs</h5>
+              <p>We define the right leading and lagging indicators for your transformation, moving beyond "go-live dates" to actual behavioural and business impact measures.</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <section class="io-section io-story" id="story">
+    <span class="io-chapter-mark">04</span>
+    <div class="io-container">
+      <div class="io-section-label io-reveal">Chapter four</div>
+      <h2 class="io-section-title io-reveal io-delay-1">Where we<br><em>began.</em></h2>
+      
+      <div class="io-story-layout">
+        <div class="io-reveal-left">
+          <blockquote class="io-pull-quote">"We started because every organisation has the right inputs, the talent, the motivation, the ideas. Our job is to connect them into something that outputs real value, sprint after sprint."</blockquote>
+          <div class="io-value-pills">
+            <span class="io-value-pill">People over process</span>
+            <span class="io-value-pill">Honesty over comfort</span>
+            <span class="io-value-pill">Outcomes over outputs</span>
+            <span class="io-value-pill">Learning over knowing</span>
+            <span class="io-value-pill">Agility over rigidity</span>
+          </div>
+        </div>
+        
+        <div class="io-reveal-right io-delay-1 narrative-space">
+          <div class="io-story-body">
+            <p>We were founded by practitioners who spent years <em>inside</em> the organisations they now coach, as Scrum Masters, Release Train Engineers, Agile Directors, and Technology Leaders navigating digital transformation in the real world.</p>
+            <p>We built this firm to be the partner we always wished we had. <strong>One that brings digital transformation strategy and agile coaching together</strong>, rather than treating them as separate engagements. One that stays through the messy middle, not just the kick-off workshop.</p>
+            <p>With offices in Pune, India and Utrecht, Netherlands, we bring India's engineering depth and the Netherlands' innovation culture together in every engagement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="io-section" id="services">
+    <span class="io-chapter-mark left-mark">05</span>
+    <div class="io-container">
+      <div class="io-services-header">
+        <div>
+          <div class="io-section-label io-reveal">Chapter five</div>
+          <h2 class="io-section-title io-reveal io-delay-1">Everything your<br><em>transformation needs.</em></h2>
+        </div>
+        <div>
+          <p class="io-section-sub io-reveal io-delay-2">Three practice areas. Nine services. One integrated partnership that takes you from digital strategy through to a self-sustaining agile culture.</p>
+        </div>
+      </div>
+
+      <div class="io-services-tabs reveal-node">
+        <button class="io-svc-tab active" data-filter="all">All Specialties</button>
+        <button class="io-svc-tab" data-filter="dx">Digital Transformation</button>
+        <button class="io-svc-tab" data-filter="agile">Agile Business</button>
+        <button class="io-svc-tab" data-filter="coaching">Agile Coaching</button>
+        <button class="io-svc-tab" data-filter="ai">AI Governance</button>
+      </div>
+
+      <div class="io-services-grid" id="servicesGrid">
+        <div class="io-service-card teal-card io-reveal" data-category="dx">
+          <div class="io-service-icon icon-tag-dx">MAP</div>
+          <h3>Digital Transformation Strategy</h3>
+          <p>We co-create your 12–36 month digital roadmap, aligning technology investments to business outcomes and building the governance structure to keep transformation on track.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">Roadmapping</span><span class="io-service-tag">Business Case</span><span class="io-service-tag">Governance</span>
+          </div>
+        </div>
+
+        <div class="io-service-card teal-card io-reveal io-delay-1" data-category="dx">
+          <div class="io-service-icon icon-tag-dx">ADO</div>
+          <h3>Technology Adoption & Change</h3>
+          <p>Whether you are rolling out a new ERP, LMS, or AI toolset, we design the adoption programme, sprint-based rollout, training, user research, and feedback loops built in.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">ERP/CRM/LMS</span><span class="io-service-tag">AI Tools</span><span class="io-service-tag">Adoption Metrics</span>
+          </div>
+        </div>
+
+        <div class="io-service-card teal-card io-reveal io-delay-2" data-category="dx">
+          <div class="io-service-icon icon-tag-dx">OPS</div>
+          <h3>Digital Operating Model Design</h3>
+          <p>We redesign how your organisation is structured for digital delivery, product teams, platform thinking, stream-aligned teams, and the enabling functions that support them.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">Team Topologies</span><span class="io-service-tag">Platform Design</span><span class="io-service-tag">Value Streams</span>
+          </div>
+        </div>
+
+        <div class="io-service-card io-featured io-reveal" data-category="agile">
+          <div class="io-service-icon icon-tag-agile">ENT</div>
+          <h3>Enterprise Agile Transformation</h3>
+          <p>Scaling agility beyond the tech team. We implement SAFe, LeSS, or bespoke frameworks across business units, aligning strategy, portfolio, and delivery in a single operating rhythm.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">SAFe / LeSS</span><span class="io-service-tag">PI Planning</span><span class="io-service-tag">ARTs</span>
+          </div>
+        </div>
+
+        <div class="io-service-card io-reveal io-delay-1" data-category="agile">
+          <div class="io-service-icon icon-tag-agile">OKR</div>
+          <h3>OKR & Portfolio Alignment</h3>
+          <p>We help organisations move from project-to-product, establishing OKR cadences, portfolio Kanban, and lean budgeting so every team is pulling in the same strategic direction.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">OKRs</span><span class="io-service-tag">Lean Budgeting</span><span class="io-service-tag">Portfolio Kanban</span>
+          </div>
+        </div>
+
+        <div class="io-service-card io-reveal io-delay-2" data-category="agile">
+          <div class="io-service-icon icon-tag-agile">DX</div>
+          <h3>Agile Health Assessment</h3>
+          <p>A candid diagnostic of where your organisation actually stands. Interviews, ceremony observations, and delivery data synthesised into an actionable maturity roadmap.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">Maturity Model</span><span class="io-service-tag">Team Survey</span><span class="io-service-tag">Roadmap</span>
+          </div>
+        </div>
+
+        <div class="io-service-card amber-card io-reveal" data-category="coaching">
+          <div class="io-service-icon icon-tag-coach">EMB</div>
+          <h3>Embedded Agile Coaching</h3>
+          <p>Our coaches embed with your teams for 3–12 months, attending ceremonies, providing real-time facilitation feedback, and building the psychological safety that makes agility sustainable.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">Embedded</span><span class="io-service-tag">Facilitation</span><span class="io-service-tag">Retros</span>
+          </div>
+        </div>
+
+        <div class="io-service-card amber-card io-reveal io-delay-1" data-category="coaching">
+          <div class="io-service-icon icon-tag-coach">CSM</div>
+          <h3>Scrum Master Training & CoE</h3>
+          <p>We train your next generation of Scrum Masters and build a Centre of Excellence that sustains coaching capability after we leave, so transformation outlives our engagement.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">CSM / PSM</span><span class="io-service-tag">CoE Design</span><span class="io-service-tag">Mentoring</span>
+          </div>
+        </div>
+
+        <div class="io-service-card amber-card io-reveal io-delay-2" data-category="coaching">
+          <div class="io-service-icon icon-tag-coach">LDR</div>
+          <h3>Leadership Agility Coaching</h3>
+          <p>Transformation lives or dies at the leadership layer. We coach C-suite and senior managers on servant leadership, agile decision-making, and creating the conditions for teams to thrive.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">C-Suite</span><span class="io-service-tag">Servant Leadership</span><span class="io-service-tag">1:1 Mentoring</span>
+          </div>
+        </div>
+
+        <div class="io-service-card io-reveal" data-category="ai">
+          <div class="io-service-icon icon-tag-ai">AI</div>
+          <h3>AI-Ready Ceremonies</h3>
+          <p>Redesigning Sprint events for configurations where AI engines generate initial story drafts, while human execution validation loops hold the architectural center safely.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">Sprint Redesign</span><span class="io-service-tag">Backlog Engineering</span>
+          </div>
+        </div>
+
+        <div class="io-service-card io-reveal io-delay-1" data-category="ai">
+          <div class="io-service-icon icon-tag-ai">TC</div>
+          <h3>Human-AI Team Contracts</h3>
+          <p>Formulating explicit operating parameters detailing software-determined configurations versus explicit human approval markers to stop developer separation across distributed teams.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">Governance Contracts</span><span class="io-service-tag">Ethical Alignment</span>
+          </div>
+        </div>
+
+        <div class="io-service-card io-reveal io-delay-2" data-category="ai">
+          <div class="io-service-icon icon-tag-ai">MX</div>
+          <h3>Telemetry & DORA Adaptations</h3>
+          <p>Recalibrating code quality analytics dashboards when machine generations inflate standard engineering output data artificially, isolating pure squad performance metrics.</p>
+          <div class="io-service-tags">
+            <span class="io-service-tag">Metrics Analytics</span><span class="io-service-tag">DORA Frameworks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="io-section io-section-bg-alt">
+    <span class="io-chapter-mark animate-mark">06</span>
+    <div class="io-container">
+      <div class="io-section-label io-reveal">Chapter six</div>
+      <h2 class="io-section-title io-reveal io-delay-1">How we work.<br><em>Every time.</em></h2>
+      <p class="io-section-sub io-reveal io-delay-2">From first conversation to self-sustaining transformation, five phases that stay consistent no matter the sector, size, or starting point.</p>
+      
+      <div class="io-how-steps">
+        <div class="io-how-step io-reveal">
+          <div class="io-step-num s1">1</div>
+          <h4>Discover</h4>
+          <p>Deep diagnostics. Interviews, ceremony observation, delivery data analysis, culture assessment. No assumptions.</p>
+        </div>
+        <div class="io-how-step io-reveal io-delay-1">
+          <div class="io-step-num s2">2</div>
+          <h4>Design</h4>
+          <p>Co-create the transformation roadmap, digital strategy, agile framework selection, coaching plan, OKRs, and success metrics.</p>
+        </div>
+        <div class="io-how-step io-reveal io-delay-2">
+          <div class="io-step-num s3">3</div>
+          <h4>Launch</h4>
+          <p>Kickoff workshops, team launches, leadership alignment sessions. Fast enough to build momentum. Careful enough to build trust.</p>
+        </div>
+        <div class="io-how-step io-reveal io-delay-3">
+          <div class="io-step-num s4">4</div>
+          <h4>Coach</h4>
+          <p>Embedded coaching through the messy middle. Real ceremonies, real feedback, real change, not just playbook adherence.</p>
+        </div>
+        <div class="io-how-step io-reveal io-delay-4">
+          <div class="io-step-num s5">5</div>
+          <h4>Sustain</h4>
+          <p>Build internal capability through CoE, SM training, and leadership coaching. We leave you stronger than we found you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="io-section" id="who">
+    <span class="io-chapter-mark left-mark">07</span>
+    <div class="io-container">
+      <div class="io-section-label io-reveal">Chapter seven</div>
+      <h2 class="io-section-title io-reveal io-delay-1">We've worked with<br><em>all of them.</em></h2>
+      
+      <div class="io-who-grid">
+        <div class="io-who-card io-wc-start io-reveal">
+          <span class="io-who-badge">Digital-First</span>
+          <h3>Scale-ups & Tech Companies</h3>
+          <p>Growing fast but the cracks are showing. Processes that worked at 20 people are breaking at 200. We help you scale your delivery capability as fast as your headcount.</p>
+          <ul>
+            <li>Team-of-teams design</li><li>Engineering culture</li><li>Delivery metrics</li><li>Technical agility</li>
+          </ul>
+        </div>
+
+        <div class="io-who-card io-wc-mid io-reveal io-delay-1">
+          <span class="io-who-badge">Transformation</span>
+          <h3>Education & Public Sector</h3>
+          <p>Complex stakeholder environments, legacy systems, budget constraints, and a mission too important to let bureaucracy slow down. We specialise in sector-specific transformation.</p>
+          <ul>
+            <li>K-12 and higher education</li><li>LMS and EdTech adoption</li><li>Teacher & staff training</li><li>Government digital services</li>
+          </ul>
+        </div>
+
+        <div class="io-who-card io-wc-ent io-reveal io-delay-2">
+          <span class="io-who-badge">Enterprise</span>
+          <h3>Corporates & Financial Services</h3>
+          <p>Large, complex organisations where transformation needs executive alignment, regulatory awareness, and the ability to work across dozens of teams in parallel.</p>
+          <ul>
+            <li>SAFe implementation</li><li>Portfolio agility</li><li>DORA compliance</li><li>AI-era team design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="io-section io-success-section" id="success">
+    <span class="io-chapter-mark text-teal-glow">08</span>
+    <div class="io-container">
+      <div class="io-cases-intro">
+        <div>
+          <div class="io-section-label io-reveal style-teal">Chapter eight</div>
+          <h2 class="io-section-title io-reveal io-delay-1 max-520">Client success <em>stories.</em></h2>
+        </div>
+        <div>
+          <p class="io-section-sub io-reveal io-delay-2">We measure success by the transformation that outlasts us. Here is one story of how an education network reimagined itself for the digital age, and the humans who made it happen.</p>
+        </div>
+      </div>
+
+      <div class="io-case-body">
+        <div class="io-case-banner io-reveal">
+          <div class="io-case-banner-overlay">
+            <div class="io-case-sector-badge">K-12 Education · Digital Transformation</div>
+            <div class="confidentiality-disclaimer">Representative engagement — client name and details changed for confidentiality</div>
+            <h2>From <em>chalkboard to cloud:</em><br>Zenith Education Network</h2>
+            <p>How a 48-school K-12 network transformed its classrooms, empowered 1,200 teachers, and built an agile culture in education, in 14 months.</p>
+            
+            <div class="io-case-quick-stats">
+              <div class="io-case-qstat">
+                <div class="io-case-qstat-num">48</div>
+                <div class="io-case-qstat-label">Schools</div>
+              </div>
+              <div class="io-case-qstat">
+                <div class="io-case-qstat-num">1,200+</div>
+                <div class="io-case-qstat-label">Educators Coached</div>
+              </div>
+              <div class="io-case-qstat">
+                <div class="io-case-qstat-num">28,000</div>
+                <div class="io-case-qstat-label">Students Impacted</div>
+              </div>
+              <div class="io-case-qstat">
+                <div class="io-case-qstat-num">14 mo.</div>
+                <div class="io-case-qstat-label">Transformation Duration</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="io-case-grid-2 io-reveal io-delay-1">
+          <div class="io-case-context-card">
+            <h4>The Organisation</h4>
+            <p>Zenith Education Network is a K-12 group spanning 48 schools across three Indian states, 28,000 students, 1,200+ teaching staff, and a leadership team that believed deeply in the power of education to change lives.</p>
+            <p style="margin-top:12px;">In 2023, they had a problem. The world had changed. Their classrooms had not.</p>
+            <ul>
+              <li>Mixed-grade schools from Grade 1 to Grade 12</li>
+              <li>Urban and semi-urban campuses across Maharashtra, Karnataka, and Telangana</li>
+              <li>Established in 1988, a proud legacy and a complex bureaucracy</li>
+              <li>National and ICSE curriculum tracks running in parallel</li>
+            </ul>
+          </div>
+          <div class="io-case-context-card structural-accent-card">
+            <h4>The Transformation Chronology</h4>
+            <div class="timeline-sub-index">
+              <p><strong>Months 1–2 // Discovery:</strong> Local operations mapping via on-site classroom data collection parameters.</p>
+              <p><strong>Months 2–3 // Strategy:</strong> Collaborative alignment workshops establishing OKR targets across branches.</p>
+              <p><strong>Months 3–8 // Launch & Embed:</strong> Bootcamps certifying 48 internal Digital Champions across multi-school sprint cycles.</p>
+              <p><strong>Months 8–12 // Mastery Scale:</strong> Organizing cross-school Learning Squads, resulting in a 8,000-household live digital seminar execution.</p>
+              <p><strong>Months 12–14 // Sustain & Exit:</strong> Launch of an autonomous internal Agile Center of Excellence handling operations natively.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="io-case-challenge io-reveal">
+          <div class="io-case-challenge-layout">
+            <div>
+              <div class="challenge-label-accent">The problem</div>
+              <h3>COVID revealed the gap. <em>Digital acceleration widened it.</em></h3>
+              <p>When remote learning became mandatory in 2020, Zenith scrambled, deploying Zoom, Google Classroom, and a new LMS within weeks. Two years later, the tools were paid for. The adoption was not happening.</p>
+              <p>By 2023, teacher digital confidence was critically low. LMS usage was at 18%. Student engagement scores had dropped. Meanwhile, Zenith's competitors were pulling ahead with interactive digital content, personalised learning paths, and data-driven teaching.</p>
+            </div>
+            
+            <div class="io-case-pain-list">
+              <div class="io-case-pain">
+                <div class="io-case-pain-icon">01</div>
+                <p><strong>LMS adoption at 18%</strong>, teachers uploaded resources but did not use interactive features, gradebooks, or parent communication modules.</p>
+              </div>
+              <div class="io-case-pain">
+                <div class="io-case-pain-icon">02</div>
+                <p><strong>Teacher resistance was high</strong>, 62% of staff in a baseline survey said they felt "unsupported" during previous technology rollouts. Trust in leadership was fragile.</p>
+              </div>
+              <div class="io-case-pain">
+                <div class="io-case-pain-icon">03</div>
+                <p><strong>Siloed decision-making</strong>, IT, academic leadership, HR, and school principals were not talking to each other. Every department had a different tool, vendor, and priority.</p>
+              </div>
+              <div class="io-case-pain">
+                <div class="io-case-pain-icon">04</div>
+                <p><strong>No transformation metrics</strong>, progress was measured by budget spend and training session attendance. Nobody was tracking actual adoption or student impact.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="io-results-section io-reveal">
+          <div class="io-results-header">
+            <div class="label">14 months later</div>
+            <h3>Numbers that tell the real story</h3>
+          </div>
+          <div class="io-results-grid">
+            <div class="io-result-card">
+              <div class="io-result-num">94%</div>
+              <div class="io-result-label">LMS active adoption rate</div>
+              <div class="io-result-delta">up from 18%</div>
+            </div>
+            <div class="io-result-card">
+              <div class="io-result-num">73%</div>
+              <div class="io-result-label">Increase in teacher digital confidence score</div>
+              <div class="io-result-delta">Baseline: 2.1 to 3.6 out of 5</div>
+            </div>
+            <div class="io-result-card">
+              <div class="io-result-num">41%</div>
+              <div class="io-result-label">Improvement in student engagement metrics</div>
+              <div class="io-result-delta">Measured via LMS activity data</div>
+            </div>
+            <div class="io-result-card">
+              <div class="io-result-num">6</div>
+              <div class="io-result-label">Self-sustaining Learning Squads formed</div>
+              <div class="io-result-delta">All operating independently</div>
+            </div>
+            <div class="io-result-card">
+              <div class="io-result-num">48</div>
+              <div class="io-result-label">Certified Digital Champions across all schools</div>
+              <div class="io-result-delta">Internal CoE in place</div>
+            </div>
+            <div class="io-result-card">
+              <div class="io-result-num">4.6</div>
+              <div class="io-result-label">Zenith's self-rated planning session score</div>
+              <div class="io-result-delta">First independent cycle</div>
+            </div>
+            <div class="io-result-card">
+              <div class="io-result-num">97%</div>
+              <div class="io-result-label">Teacher retention rate during transformation</div>
+              <div class="io-result-delta">Sector avg: 82%</div>
+            </div>
+            <div class="io-result-card">
+              <div class="io-result-num">8K</div>
+              <div class="io-result-label">Households reached via live virtual parent sync</div>
+              <div class="io-result-delta">First-ever digital event</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="io-case-testi io-reveal">
+          <div class="io-case-openquote">"</div>
+          <blockquote class="io-case-testi-quote">
+            The team did not come in and install a system. They came in and changed how our people think about change itself. Our Digital Champions are now our best change agents, and they were trained teachers twelve months ago, not technologists. That shift in identity is worth more than any platform we deployed.
+          </blockquote>
+          <div class="io-case-testi-person">
+            <div class="io-case-testi-avatar">RP</div>
+            <div>
+              <div class="io-case-testi-name">Rajiv Pillai</div>
+              <div class="io-case-testi-role">CEO, Zenith Education Network · Maharashtra, India</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="io-lessons io-reveal">
+          <h4>What this engagement taught us</h4>
+          <div class="io-lessons-grid">
+            <div class="io-lesson">
+              <div class="io-lesson-num">01</div>
+              <p><strong>Trust is the technology.</strong> In education, adoption blockers are almost never technical. They are relational. The moment a teacher trusted their Digital Champion, their LMS usage tripled.</p>
+            </div>
+            <div class="io-lesson">
+              <div class="io-lesson-num">02</div>
+              <p><strong>Sprint cadence works in classrooms.</strong> Six-week adoption cycles with retrospectives gave teachers a safe, predictable rhythm for change. The same principle works in pedagogy.</p>
+            </div>
+            <div class="io-lesson">
+              <div class="io-lesson-num">03</div>
+              <p><strong>Exit strategy starts on day one.</strong> Every coaching decision was made with sustainability in mind. We turned teachers into coaches, not dependents. That is the only transformation that lasts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="io-section io-section-bg-deep dark-theme-strip">
+    <div class="io-container">
+      <span class="io-chapter-mark dark-mark">09</span>
+      <div class="io-section-label style-bright">Chapter nine</div>
+      <h2 class="io-section-title text-white">Teams we have <em>transformed.</em></h2>
+      
+      <div class="io-testi-grid">
+        <div class="io-testi-card io-reveal">
+          <span class="io-testi-openquote">"</span>
+          <p class="io-testi-text">The coaching here is different. They don't just teach the framework, they understand the human dynamics that make or break a transformation. Six months in, our teams are shipping twice as fast and actually enjoying their retrospectives.</p>
+          <div class="io-testi-author">
+            <div class="io-testi-avatar style-avatar-a">SK</div>
+            <div>
+              <div class="io-testi-name">Siddharth Kumar</div>
+              <div class="io-testi-role">VP Engineering, FinTech Startup · Pune</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="io-testi-card io-reveal io-delay-1">
+          <span class="io-testi-openquote">"</span>
+          <p class="io-testi-text">We had tried SAFe twice before engaging us. Both times it collapsed within a year. They understood why—it wasn't the framework, it was the leadership layer. Their executive coaching changed everything.</p>
+          <div class="io-testi-author">
+            <div class="io-testi-avatar style-avatar-b">MV</div>
+            <div>
+              <div class="io-testi-name">Marieke van der Berg</div>
+              <div class="io-testi-role">Head of Agile, Insurance Group · Utrecht</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="io-testi-card io-reveal io-delay-2">
+          <span class="io-testi-openquote">"</span>
+          <p class="io-testi-text">The India-Netherlands coaching model is genuinely unique. Our Pune team and Amsterdam product owners finally have shared language, shared ceremonies, and, for the first time, shared pride in what they're building together.</p>
+          <div class="io-testi-author">
+            <div class="io-testi-avatar style-avatar-c">JP</div>
+            <div>
+              <div class="io-testi-name">Jan Peters</div>
+              <div class="io-testi-role">CPO, Healthcare SaaS · Netherlands</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="io-stats-row io-reveal">
+        <div class="io-stat-cell"><div class="io-stat-num">120+</div><div class="io-stat-label">Organisations transformed</div></div>
+        <div class="io-stat-cell"><div class="io-stat-num">3×</div><div class="io-stat-label">Average delivery speed increase</div></div>
+        <div class="io-stat-cell"><div class="io-stat-num">8+</div><div class="io-stat-label">Years of practitioner experience</div></div>
+        <div class="io-stat-cell"><div class="io-stat-num">100%</div><div class="io-stat-label">People-first philosophy</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="io-section io-nl-section" id="netherlands">
+    <span class="io-chapter-mark">10</span>
+    <div class="io-container">
+      <div class="io-section-label io-reveal">Chapter ten</div>
+      <h2 class="io-section-title io-reveal io-delay-1">We are in the Netherlands.<br><em>Here is why that matters.</em></h2>
+      <p class="io-section-sub io-reveal io-delay-2">The Dutch market is not short of digital transformation ambition. It is short of partners who understand the specific pressures that make it hard here, and have coaches on both sides of the India-NL delivery relationship.</p>
+      
+      <div class="io-nl-problems">
+        <div class="io-nl-problem-card io-reveal">
+          <span class="io-nl-problem-num">01</span>
+          <h3>The reorganisation hangover</h3>
+          <p>Over 350 Dutch companies announced restructures in early 2026. ING, ABN AMRO, ASML and more. Reorganisations fracture team identity and digital momentum simultaneously. We help rebuild both.</p>
+          <span class="io-nl-problem-tag">Post-reorg team reset</span>
+        </div>
+
+        <div class="io-nl-problem-card io-nl-dark io-reveal io-delay-1">
+          <span class="io-nl-problem-num">02</span>
+          <h3>95% AI adoption. Zero AI team design.</h3>
+          <p>Nearly every Dutch organisation has deployed AI tools. Almost none has redesigned how teams are structured, how decisions are made, or how a Scrum Master facilitates when half the backlog is AI-generated.</p>
+          <span class="io-nl-problem-tag">AI-era team coaching</span>
+        </div>
+
+        <div class="io-nl-problem-card io-reveal io-delay-2">
+          <span class="io-nl-problem-num">03</span>
+          <h3>The offshore delivery gap</h3>
+          <p>Your product owners are in Amsterdam. Your engineers are in Pune. Standup at 11:00 CET is a monologue. This is not a timezone problem, it is a culture and facilitation problem. We have coaches on both sides of that call.</p>
+          <span class="io-nl-problem-tag">India-NL delivery alignment</span>
+        </div>
+      </div>
+
+      <div class="io-bridge io-reveal io-delay-1">
+        <div class="io-bridge-label-top">Two offices. One way of working.</div>
+        <h3 class="bridge-main-title">India meets Netherlands.<br><em>Coaching bridges the gap.</em></h3>
+        <p class="bridge-sub-desc">The most common friction in distributed digital transformation is not tooling or timezones, it is the invisible contract of expectations that nobody wrote down. We write it down. Together.</p>
+        
+        <div class="io-bridge-grid">
+          <div class="io-bridge-office">
+            <span class="io-bridge-flag-text">IN</span>
+            <h4>India</h4><span class="io-bridge-city">Pune</span>
+            <ul>
+              <li>Engineering and delivery teams</li><li>Scrum Masters embedded in sprints</li><li>Technical agility and XP practices</li><li>Digital transformation delivery</li>
+            </ul>
+          </div>
+
+          <div class="center-svg-interconnect">
+            <svg viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="interconnect-graphic">
+              <path d="M60 10 Q20 60 40 100 Q60 140 20 190" stroke="#8b00ff" stroke-width="1.5" stroke-dasharray="5 4" fill="none" opacity="0.4"/>
+              <path d="M60 10 Q100 60 80 100 Q60 140 100 190" stroke="#8b00ff" stroke-width="1.5" stroke-dasharray="5 4" fill="none" opacity="0.4"/>
+              <circle cx="60" cy="100" r="18" fill="rgba(139,0,255,0.08)" stroke="#8b00ff" stroke-width="1.5"/>
+              <text x="60" y="105" font-size="11" fill="#8b00ff" text-anchor="middle" font-weight="bold">io</text>
+            </svg>
+            <p class="center-cursive-tag">coaches on<br>both sides</p>
+          </div>
+
+          <div class="io-bridge-office">
+            <span class="io-bridge-flag-text">NL</span>
+            <h4>Netherlands</h4><span class="io-bridge-city">Utrecht</span>
+            <ul>
+              <li>Product owners and leadership alignment</li><li>Digital transformation strategy</li><li>Executive agile workshops (Dutch / English)</li><li>Cross-border team rituals and PI planning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="industry-matrix-headline">
+        <div class="io-section-label">Where we work in the Netherlands</div>
+        <h3 class="matrix-title">Four industries. One <em>transformation mandate.</em></h3>
+      </div>
+      
+      <div class="io-nl-sectors">
+        <div class="io-nl-sector io-reveal">
+          <div class="io-nl-sector-icon font-geometric">FIN</div>
+          <h4>Financial Services</h4>
+          <p>Post-restructure team rebuilding, AI-driven product changes, and DORA compliance pressure are reshaping how Dutch banks organise delivery.</p>
+          <div class="io-nl-sector-firms">
+            <span class="io-nl-firm-tag">ING</span><span class="io-nl-firm-tag">ABN AMRO</span><span class="io-nl-firm-tag">Rabobank</span><span class="io-nl-firm-tag">Aegon</span>
+          </div>
+        </div>
+
+        <div class="io-nl-sector io-reveal io-delay-1">
+          <div class="io-nl-sector-icon font-geometric">MFG</div>
+          <h4>High-Tech Manufacturing</h4>
+          <p>Hardware-software co-development at scale demands Agile that works across R&D, firmware, and supply chain, not in sequence.</p>
+          <div class="io-nl-sector-firms">
+            <span class="io-nl-firm-tag">ASML</span><span class="io-nl-firm-tag">Philips</span><span class="io-nl-firm-tag">NXP</span><span class="io-nl-firm-tag">Thales NL</span>
+          </div>
+        </div>
+
+        <div class="io-nl-sector io-reveal io-delay-2">
+          <div class="io-nl-sector-icon font-geometric">ENE</div>
+          <h4>Energy & Logistics</h4>
+          <p>The green transition and port digitalisation are forcing massive cross-functional digital programmes. Product thinking is new here. Coaching is critical.</p>
+          <div class="io-nl-sector-firms">
+            <span class="io-nl-firm-tag">Shell</span><span class="io-nl-firm-tag">PostNL</span><span class="io-nl-firm-tag">Port of Rotterdam</span>
+          </div>
+        </div>
+
+        <div class="io-nl-sector io-reveal io-delay-3">
+          <div class="io-nl-sector-icon font-geometric">HLT</div>
+          <h4>Healthcare & GovTech</h4>
+          <p>Public sector and care organisations are under pressure to digitally modernise at scale with limited agile maturity and complex stakeholder environments.</p>
+          <div class="io-nl-sector-firms">
+            <span class="io-nl-firm-tag">Philips Health</span><span class="io-nl-firm-tag">Rijksoverheid</span><span class="io-nl-firm-tag">UMC Utrecht</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="io-ai-callout io-reveal io-delay-1">
+        <div>
+          <div class="io-section-label italic-label">The new frontier</div>
+          <h3>Your teams adopted AI.<br><em>Nobody redesigned how humans work with it.</em></h3>
+          <p class="ai-body-para">In the Netherlands, 95% of organisations have deployed AI tools across teams. Copilot, Jira AI, custom models, digital co-workers. The dashboards look great.</p>
+          <p class="ai-body-para">But the Scrum ceremonies were not redesigned. The Definition of Ready still assumes a human wrote every story. Velocity went up. Team trust quietly went down. The humans in the process became validators, not creators, and nobody named that transition.</p>
+          <p class="ai-marker-cursive">We coach the layer that AI cannot touch.</p>
+        </div>
+        
+        <div class="io-ai-points">
+          <div class="io-ai-point">
+            <div class="io-ai-point-icon">AI</div>
+            <div>
+              <h5>AI-ready ceremonies</h5>
+              <p>Redesigning Sprint events for teams where AI generates first drafts, flags risks, and summarises standups. Human judgment stays central.</p>
+            </div>
+          </div>
+          <div class="io-ai-point">
+            <div class="io-ai-point-icon">TC</div>
+            <div>
+              <h5>Human-AI team contracts</h5>
+              <p>Explicit agreements on what AI decides, what humans decide, and how both are reviewed. Clarity that prevents quiet disengagement.</p>
+            </div>
+          </div>
+          <div class="io-ai-point">
+            <div class="io-ai-point-icon">MX</div>
+            <div>
+              <h5>Metrics that still mean something</h5>
+              <p>When AI inflates velocity, DORA metrics need human context. We help teams build dashboards reflecting real delivery health.</p>
+            </div>
+          </div>
+          <div class="io-ai-point">
+            <div class="io-ai-point-icon">SF</div>
+            <div>
+              <h5>SAFe and AI Summit ready</h5>
+              <p>The 2026 SAFe and AI Summit is in Amsterdam. We help your teams arrive with a transformation story, not just a slide deck.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="io-cta-band" id="contact">
+    <div class="io-reveal">
+      <h2>Ready to transform<br><em>the way your organisation works?</em></h2>
+      <div class="cta-actions-wrapper">
+        <a href="mailto:hello@iostring.com" class="io-btn-white">Start the Conversation</a>
+        <a href="https://us05web.zoom.us/j/9136964443?pwd=oElaCcmA4yDPl661RcWKBZfmifHK6T.1" target="_blank" rel="noopener" class="zoom-booking-btn">Book a live Sync Call</a>
+        <span class="cta-cursive-sub">no commitment, just a chat</span>
+      </div>
+    </div>
+    <div class="cta-decorative-matrix">
+      <svg viewBox="0 0 220 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="cta-matrix-svg" aria-hidden="true">
+        <circle cx="110" cy="80" r="70" stroke="white" stroke-width="2" stroke-dasharray="8 5"/>
+        <circle cx="110" cy="80" r="45" stroke="white" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <circle cx="110" cy="80" r="20" stroke="white" stroke-width="1.5"/>
+        <path d="M50 80 L170 80 M110 30 L110 130 M68 47 L152 113 M68 113 L152 47" stroke="white" stroke-width="1" opacity="0.6"/>
+      </svg>
+    </div>
+  </div>
+
+  <footer class="io-footer">
+    <div class="io-footer-top">
+      <div class="io-footer-brand">
+        <img src="iostring.png" alt="iostring logo" style="height: 28px; width: auto; display: block; filter: brightness(0) invert(1); margin-bottom: 20px;">
+        <p>Your digital transformation and agile business partner. Helping organisations build the future of work, through technology, strategy, and people-first coaching.</p>
+        <div class="footer-office-registers">
+          <span class="register-title">Global Office Operations</span>
+          <span class="register-spec">Pune Office · India</span>
+          <span class="register-spec">Utrecht Hub · Netherlands</span>
+        </div>
+      </div>
+      
       <div>
-        <h5>Hub Networks</h5>
+        <h5>Services</h5>
         <ul>
-          <li><a href="#netherlands">Pune Office Base</a></li>
-          <li><a href="#netherlands">Utrecht Strategy Hub</a></li>
+          <li><a href="#services">Digital Transformation</a></li>
+          <li><a href="#services">Agile Business Transformation</a></li>
+          <li><a href="#services">Agile Coaching</a></li>
+          <li><a href="#services">SM Training & CoE</a></li>
+          <li><a href="#services">Leadership Coaching</a></li>
         </ul>
       </div>
+      
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#success">Client Success Cases</a></li>
+          <li><a href="#netherlands">Netherlands Network</a></li>
+        </ul>
+      </div>
+      
       <div>
         <h5>Connect</h5>
         <ul>
+          <li><a href="https://www.linkedin.com/company/iostring/" target="_blank" rel="noopener" class="footer-linkedin-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn Profile</a>
+          </li>
           <li><a href="mailto:hello@iostring.com">hello@iostring.com</a></li>
-          <li><a href="https://www.linkedin.com/company/iostring/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://us05web.zoom.us/j/9136964443?pwd=oElaCcmA4yDPl661RcWKBZfmifHK6T.1" target="_blank" rel="noopener">Direct Booking Interface</a></li>
         </ul>
       </div>
     </div>
-    <div class="dr-footer-bottom">
-      <span>&copy; 2026 iostring Technology & Consulting. All rights reserved.</span>
+    
+    <div class="io-footer-bottom">
+      <span>&copy; 2026 iostring Technology & Consulting. All rights reserved. India & Netherlands.</span>
       <a href="#">Privacy Protocol</a>
     </div>
   </footer>
