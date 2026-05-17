@@ -1,32 +1,16 @@
-# iostring — Digital Transformation & Agile Business Partner
+# iostring Website Production Repository
 
-A professional website for **iostring Technology & Consulting**, offering services in Digital Transformation, Agile Business Transformation, Agile Coaching, Scrum Master Training, and Leadership Coaching. Offices in Pune, India and Utrecht, Netherlands.
+A technical, premium frontend landing page engineered for **iostring Technology & Consulting** using a minimalist, data-driven layout inspired by global leading engineering consulting frameworks.
 
-## 📁 Project Structure
+## 🎨 Design Language System
+The asset palette configuration is entirely extracted from the official **iostring** identity footprint:
+* **Primary Ink Dark:** `#05070c`
+* **Vibrant Brand Accent:** `#8b00ff` (Logo Chevron Purple)
+* **Background Canvas Soft Grey:** `#f1f3f5`
 
-```
-├── index.html      # Main HTML page
-├── styles.css      # All styles and responsive layout
-├── main.js         # Scroll animations and number counters
-└── README.md       # This file
-```
-
-## 🚀 Deploying to GitHub Pages
-
-1. Push this repository to GitHub
-2. Go to **Settings → Pages**
-3. Under **Source**, select `main` branch and `/ (root)`
-4. Click **Save** — your site will be live at `https://<your-username>.github.io/<repo-name>/`
-
-## 🛠 Tech Stack
-
-- Pure HTML5, CSS3, and vanilla JavaScript (no frameworks)
-- Google Fonts: Playfair Display, DM Sans, Caveat
-- IntersectionObserver API for scroll-reveal animations
-- Fully responsive design
-
-## 📬 Contact
-
-- 🌐 [iostring.com](https://iostring.com)
-- 📧 hello@iostring.com
-- 💼 [LinkedIn](https://www.linkedin.com/company/iostring/)
+## 📁 Repository Directory Matrix
+```text
+├── index.html     # Structural DOM blueprint & page section definitions
+├── style.css      # Core responsive layout rulesets and brand tokens
+├── main.js        # Dynamic interactive script handlers and telemetry animations
+└── README.md      # Project infrastructure summary documentation
