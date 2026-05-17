@@ -1,16 +1,17 @@
-# iostring Website Production Repository
+# iostring Corporate Web Platform Matrix
 
-A technical, premium frontend landing page engineered for **iostring Technology & Consulting** using a minimalist, data-driven layout inspired by global leading engineering consulting frameworks.
+A high-performance, modular architectural interface engineered for **iostring Technology & Consulting** utilizing the strict data parameters, chapter guidelines, and cross-border specifications extracted from the master system logs.
 
-## 🎨 Design Language System
-The asset palette configuration is entirely extracted from the official **iostring** identity footprint:
-* **Primary Ink Dark:** `#05070c`
-* **Vibrant Brand Accent:** `#8b00ff` (Logo Chevron Purple)
-* **Background Canvas Soft Grey:** `#f1f3f5`
+## 🎨 Asset Signature Tokens
+The styling layer runs natively on theme parameters extracted from the official logo blueprint:
+* **Background Canvas (Paper Soft Gray):** `#f1f3f5`
+* **Primary Deep Ink Tone:** `#05070c`
+* **High-Vis Activation Purple:** `#8b00ff`
 
-## 📁 Repository Directory Matrix
+## 📦 Directory Pipeline Summary
 ```text
-├── index.html     # Structural DOM blueprint & page section definitions
-├── style.css      # Core responsive layout rulesets and brand tokens
-├── main.js        # Dynamic interactive script handlers and telemetry animations
-└── README.md      # Project infrastructure summary documentation
+├── index.html     # Semantic DOM hierarchy mapping chapters 1–10 complete
+├── style.css      # Core grid engine, theme configurations, and fluid breakpoints
+├── main.js        # Scrollspy metrics controller, counters acceleration, and grid filters
+├── iostring.png   # System identity logo asset
+└── README.md      # Repository deployment matrix documentation
