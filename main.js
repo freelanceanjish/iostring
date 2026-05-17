@@ -1,41 +1,94 @@
-(function() {
-  var elements = document.querySelectorAll('.io-reveal, .io-reveal-left, .io-reveal-right');
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry, i) {
-      if (entry.isIntersecting) {
-        setTimeout(function() { entry.target.classList.add('io-visible'); }, i * 60);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  elements.forEach(function(el) { observer.observe(el); });
+document.addEventListener("DOMContentLoaded", function () {
+  
+  // 1. Navigation Controller & Sticky Scroll Handler
+  const nav = document.getElementById("mainNav");
+  const navLinks = document.querySelectorAll(".nav-item");
+  const sections = document.querySelectorAll("section");
 
-  // Animate result numbers
-  function animateNumber(el) {
-    var target = parseFloat(el.textContent.replace(/[^0-9.]/g, ''));
-    var suffix = el.textContent.replace(/[0-9.]/g, '');
-    if (isNaN(target)) return;
-    var start = 0; var duration = 1800;
-    var step = function(timestamp) {
-      if (!start) start = timestamp;
-      var progress = Math.min((timestamp - start) / duration, 1);
-      var ease = 1 - Math.pow(1 - progress, 3);
-      var current = Math.round(target * ease * 10) / 10;
-      el.textContent = (Number.isInteger(target) ? Math.round(current) : current) + suffix;
-      if (progress < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  }
-  var resultObs = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        var nums = entry.target.querySelectorAll('.io-result-num, .io-stat-num');
-        nums.forEach(animateNumber);
-        resultObs.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-  document.querySelectorAll('.io-results-grid, .io-stats-row').forEach(function(el) {
-    resultObs.observe(el);
-  });
-})();
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 40) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+
+    let activeId = "";
+    sections.forEach((sect) => {
+      if (window.scrollY >= (sect.offsetTop - 120)) {
+        activeId = sect.getAttribute("id");
+      }
+    });
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${activeId}`) link.classList.add("active");
+    });
+  });
+
+  // 2. Element Scroll Intersection Reveal Engine
+  const nodes = document.querySelectorAll('.reveal-node');
+  const elementObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        elementObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.05 });
+  nodes.forEach((n) => elementObserver.observe(n));
+
+  // 3. Practice Capability Grid Filter Module
+  const filterButtons = document.querySelectorAll(".dr-filter-btn");
+  const serviceCards = document.querySelectorAll(".dr-service-card");
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const targetFilter = btn.getAttribute("data-filter");
+
+      serviceCards.forEach((card) => {
+        const cardCategory = card.getAttribute("data-category");
+        if (targetFilter === "all" || cardCategory === targetFilter) {
+          card.style.display = "block";
+          setTimeout(() => { card.style.opacity = "1"; card.style.transform = "translateY(0)"; }, 40);
+        } else {
+          card.style.opacity = "0";
+          card.style.transform = "translateY(15px)";
+          setTimeout(() => { card.style.display = "none"; }, 300);
+        }
+      });
+    });
+  });
+
+  // 4. Numerical Telemetry Metrics Counter Acceleration Animation
+  const numericMetrics = document.querySelectorAll(".dr-stat-num, .dr-hero-metric");
+  const metricsObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const element = entry.target;
+        const targetNum = parseFloat(element.innerText.replace(/[^0-9.]/g, ''));
+        const unitSuffix = element.innerText.replace(/[0-9.]/g, '');
+        if (isNaN(targetNum)) return;
+
+        let currentNum = 0;
+        const animationSteps = 50;
+        const incrementValue = targetNum / animationSteps;
+        let stepIndex = 0;
+
+        const counterInterval = setInterval(() => {
+          currentNum += incrementValue;
+          stepIndex++;
+          if (stepIndex >= animationSteps) {
+            element.innerText = targetNum + unitSuffix;
+            clearInterval(counterInterval);
+          } else {
+            element.innerText = (Number.isInteger(targetNum) ? Math.round(currentNum) : currentNum.toFixed(1)) + unitSuffix;
+          }
+        }, 25);
+        metricsObserver.unobserve(element);
+      }
+    });
+  }, { threshold: 0.1 });
+  numericMetrics.forEach((m) => metricsObserver.observe(m));
+});
