@@ -119,28 +119,30 @@ body {
   box-shadow: 0 30px 60px rgba(5,7,12,0.04); overflow: hidden;
 }
 .dr-chevron-overlay {
-  font-family: var(--font-display);
-  font-size: 110px;
-  font-weight: 900;
-  color: var(--purple-brand);
-  letter-spacing: -16px;
   display: flex;
-  gap: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.dr-chevron-overlay span {
-  display: inline-block;
-  animation: chevron-march 1.2s ease-in-out infinite;
+.dr-chevron-overlay svg {
+  width: 260px;
+  height: 200px;
 }
 
-.dr-chevron-overlay span:nth-child(1) { animation-delay: 0s; }
-.dr-chevron-overlay span:nth-child(2) { animation-delay: 0.18s; }
-.dr-chevron-overlay span:nth-child(3) { animation-delay: 0.36s; }
+.dr-chevron-overlay .ch {
+  animation: chevron-march 1.4s ease-in-out infinite;
+}
+
+.dr-chevron-overlay .ch1 { animation-delay: 0s; }
+.dr-chevron-overlay .ch2 { animation-delay: 0.22s; }
+.dr-chevron-overlay .ch3 { animation-delay: 0.44s; }
 
 @keyframes chevron-march {
-  0%   { opacity: 0.2; transform: translateX(0)   scale(0.85); }
-  50%  { opacity: 1;   transform: translateX(10px) scale(1.1);  }
-  100% { opacity: 0.2; transform: translateX(20px) scale(0.85); }
+  0%   { opacity: 0.2; transform: translateX(0px);  }
+  50%  { opacity: 1;   transform: translateX(12px); }
+  100% { opacity: 0.2; transform: translateX(24px); }
 }
 .io-hero-img-badge {
   position: absolute; bottom: 32px; left: 32px; right: 32px; background: var(--white);
