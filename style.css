@@ -24,9 +24,9 @@
   --amber-pale: #fef3c7;
   --paper-warm: var(--purple-ghost);
 
-  /* Typography Rulesets */
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  /* Typography Rulesets — Lora headings + Inter body (humbleskeptic.com style) */
+  --font-display: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   
   /* Geometry Tokens */
   --r-sm: 8px;
