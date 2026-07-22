@@ -1,6 +1,6 @@
 # iostring Corporate Web Platform Matrix
 
-A high-performance, modular architectural interface engineered for **iostring Technology & Consulting** utilizing the strict data parameters, chapter guidelines, and cross-border specifications extracted from the master system logs.
+A high-performance, modular architectural interface engineered for **iostring Technology & Consulting**.
 
 ## 🎨 Asset Signature Tokens
 The styling layer runs natively on theme parameters extracted from the official logo blueprint:
@@ -10,8 +10,8 @@ The styling layer runs natively on theme parameters extracted from the official 
 
 ## 📦 Directory Pipeline Summary
 ```text
-├── index.html     # Semantic DOM hierarchy mapping chapters 1–10 complete
+├── index.html     # Semantic DOM hierarchy for the single-page site
 ├── style.css      # Core grid engine, theme configurations, and fluid breakpoints
-├── main.js        # Scrollspy metrics controller, counters acceleration, and grid filters
+├── main.js        # Scrollspy controller and service grid filters
 ├── iostring.png   # System identity logo asset
 └── README.md      # Repository deployment matrix documentation

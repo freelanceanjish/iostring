@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, { threshold: 0.05 });
   animateReveals.forEach((node) => scrollIntersectionObserver.observe(node));
 
-  // 3. Chapter 5 Practice Area Cross-Filtering Control Logic Matrix
+  // 3. Practice area cross-filtering for services grid
   const dynamicFilterToggles = document.querySelectorAll(".io-svc-tab");
   const platformServiceCards = document.querySelectorAll(".io-service-card");
 
@@ -74,39 +74,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-
-  // 4. Live Counter Acceleration Engine for Quantifiable Analytics Strings
-  const quantitativeMetrics = document.querySelectorAll(".io-result-num, .io-stat-num, .io-case-qstat-num");
-  const metricsIntersectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const metricDOMNode = entry.target;
-        const terminalTarget = parseFloat(metricDOMNode.innerText.replace(/[^0-9.]/g, ''));
-        const semanticSuffix = metricDOMNode.innerText.replace(/[0-9.]/g, '');
-        
-        if (isNaN(terminalTarget)) return;
-
-        let trackingBase = 0;
-        const completeSteps = 60;
-        const deltaIncremental = terminalTarget / completeSteps;
-        let executionIndex = 0;
-
-        const countingTimer = setInterval(() => {
-          trackingBase += deltaIncremental;
-          executionIndex++;
-          
-          if (executionIndex >= completeSteps) {
-            metricDOMNode.innerText = terminalTarget + semanticSuffix;
-            clearInterval(countingTimer);
-          } else {
-            metricDOMNode.innerText = (Number.isInteger(terminalTarget) ? Math.round(trackingBase) : trackingBase.toFixed(1)) + semanticSuffix;
-          }
-        }, 20);
-
-        metricsIntersectionObserver.unobserve(metricDOMNode);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  quantitativeMetrics.forEach((statNode) => metricsIntersectionObserver.observe(statNode));
 });
