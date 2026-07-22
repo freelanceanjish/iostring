@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, { threshold: 0.05 });
   animateReveals.forEach((node) => scrollIntersectionObserver.observe(node));
 
-  // 3. Chapter 5 Practice Area Cross-Filtering Control Logic Matrix
+  // 3. Practice area cross-filtering for services grid
   const dynamicFilterToggles = document.querySelectorAll(".io-svc-tab");
   const platformServiceCards = document.querySelectorAll(".io-service-card");
 
