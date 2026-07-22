@@ -95,11 +95,7 @@ body {
   min-height: 95vh; padding: clamp(100px, 12vh, 140px) 7vw clamp(40px, 5vh, 60px); display: grid; grid-template-columns: 1.1fr 1fr;
   gap: 60px; align-items: center; position: relative; max-width: 1300px; margin: 0 auto;
 }
-.io-chapter-label {
-  font-family: var(--font-display); font-size: 12px; font-weight: 700; color: var(--purple-brand);
-  letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 16px; display: block;
-}
-.io-hero h1 {
+/* Premium Hero Module Layout */
   font-family: var(--font-display); font-size: clamp(42px, 5.2vw, 72px); font-weight: 700;
   line-height: 1.1; letter-spacing: -0.03em; color: var(--ink); margin-bottom: 24px;
 }
@@ -157,7 +153,6 @@ body {
 .io-section-bg-alt { background: var(--purple-ghost); border-top: 1px solid rgba(139,0,255,0.05); border-bottom: 1px solid rgba(139,0,255,0.05); }
 .io-section-bg-deep { background: var(--ink); position: relative; }
 .io-pretitle, .io-section-label { font-family: monospace; font-size: 12px; color: var(--purple-brand); font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; display: block; margin-bottom: 16px; }
-.io-section-label.style-teal { color: #0f766e; }
 .io-section-title { font-family: var(--font-display); font-size: clamp(32px, 4vw, 54px); font-weight: 700; color: var(--ink); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 20px; }
 .io-section-title em { font-style: normal; color: var(--purple-brand); }
 .io-section-sub { font-size: 17px; color: var(--ink-muted); max-width: 540px; font-weight: 300; }
