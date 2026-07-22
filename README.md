@@ -10,8 +10,8 @@ The styling layer runs natively on theme parameters extracted from the official 
 
 ## 📦 Directory Pipeline Summary
 ```text
-├── index.html     # Semantic DOM hierarchy mapping chapters 1–10 complete
+├── index.html     # Semantic DOM hierarchy mapping chapters 1–8
 ├── style.css      # Core grid engine, theme configurations, and fluid breakpoints
-├── main.js        # Scrollspy metrics controller, counters acceleration, and grid filters
+├── main.js        # Scrollspy controller and service grid filters
 ├── iostring.png   # System identity logo asset
 └── README.md      # Repository deployment matrix documentation
