@@ -24,7 +24,7 @@
   --amber-pale: #fef3c7;
   --paper-warm: var(--purple-ghost);
 
-  /* Typography Rulesets — Lora headings + Inter body (humbleskeptic.com style) */
+  /* Typography: Lora headings + Inter body */
   --font-display: 'Lora', Georgia, 'Times New Roman', serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   
