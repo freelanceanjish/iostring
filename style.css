@@ -91,6 +91,7 @@ body {
 .io-nav-cta:hover { background: var(--purple-mid); transform: translateY(-1px); box-shadow: 0 6px 15px rgba(139, 0, 255, 0.2); }
 .io-nav.hero-top .io-nav-links a { color: rgba(255,255,255,0.82); }
 .io-nav.hero-top .io-nav-links a:hover, .io-nav.hero-top .io-nav-links a.active { color: var(--white); }
+.io-nav.hero-top .io-logo img { filter: brightness(0) invert(1); }
 
 /* Premium Hero Module Layout */
 .io-hero {
