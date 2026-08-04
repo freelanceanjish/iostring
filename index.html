@@ -35,46 +35,45 @@
   </nav>
 
   <header class="io-hero" id="hero">
-    <div class="io-reveal">
-      <h1>Your partner in <br><em>digital & agile</em><br>transformation.</h1>
-      <p class="io-hero-sub">We help organisations navigate digital transformation through agile business practices, technology adoption, and deep human coaching, from startups to enterprise, and across education, financial services, civil infrastructure, sustainability, and circular construction.</p>
-      
-      <div class="io-hero-tags">
-        <span class="io-hero-tag t1">Digital Transformation</span>
-        <span class="io-hero-tag t2">Agile Business</span>
-        <span class="io-hero-tag t3">Coaching</span>
-        <span class="io-hero-tag t4">Civil & Sustainability</span>
-        <span class="io-hero-tag t5">Circular Construction</span>
-      </div>
-
-      <div class="io-hero-actions">
-        <a href="#circular-construction" class="io-btn-primary">Circular Construction Model</a>
-        <a href="#services" class="io-btn-text">Explore Services</a>
-      </div>
+    <div class="io-hero-bg" aria-hidden="true">
+      <div class="io-hero-slide active" style="background-image: url('hero-financial-services-4k.png');"></div>
+      <div class="io-hero-slide" style="background-image: url('hero-energy-domain-4k.png');"></div>
+      <div class="io-hero-slide" style="background-image: url('hero-circular-construction-4k.png');"></div>
+      <div class="io-hero-bg-overlay"></div>
     </div>
-    
-    <div class="io-hero-art io-reveal-right io-delay-1">
-      <div class="dr-chevron-overlay">
-        <svg viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#2b4aad"/>
-              <stop offset="100%" stop-color="#04a3e5"/>
-            </linearGradient>
-          </defs>
-          <!-- Arrow 1 -->
-          <g class="ch ch1">
-            <polygon points="10,20 40,20 80,100 40,180 10,180 50,100" fill="url(#arrowGrad)"/>
-          </g>
-          <!-- Arrow 2 -->
-          <g class="ch ch2">
-            <polygon points="50,20 80,20 120,100 80,180 50,180 90,100" fill="url(#arrowGrad)"/>
-          </g>
-          <!-- Arrow 3 -->
-          <g class="ch ch3">
-            <polygon points="90,20 120,20 160,100 120,180 90,180 130,100" fill="url(#arrowGrad)"/>
-          </g>
-        </svg>
+
+    <div class="io-hero-inner">
+      <div class="io-hero-copy io-reveal">
+        <h1>Your partner in <br><em>digital & agile</em><br>transformation.</h1>
+        <p class="io-hero-sub">We help organisations navigate digital transformation through agile business practices, technology adoption, and deep human coaching, from startups to enterprise, and across education, financial services, civil infrastructure, sustainability, and circular construction.</p>
+        
+        <div class="io-hero-tags">
+          <span class="io-hero-tag t1">Digital Transformation</span>
+          <span class="io-hero-tag t2">Agile Business</span>
+          <span class="io-hero-tag t3">Coaching</span>
+          <span class="io-hero-tag t4">Civil & Sustainability</span>
+          <span class="io-hero-tag t5">Circular Construction</span>
+        </div>
+
+        <div class="io-hero-actions">
+          <a href="#circular-construction" class="io-btn-primary">Circular Construction Model</a>
+          <a href="#services" class="io-btn-text io-btn-text-light">Explore Services</a>
+        </div>
+      </div>
+      
+      <div class="io-hero-frames io-reveal-right io-delay-1">
+        <button type="button" class="io-hero-frame active" data-slide="0" aria-label="Show Financial Services background">
+          <img src="hero-financial-services-4k.png" alt="Financial Services domain">
+          <span class="io-hero-frame-label">Financial Services</span>
+        </button>
+        <button type="button" class="io-hero-frame" data-slide="1" aria-label="Show Energy domain background">
+          <img src="hero-energy-domain-4k.png" alt="Energy domain">
+          <span class="io-hero-frame-label">Energy</span>
+        </button>
+        <button type="button" class="io-hero-frame" data-slide="2" aria-label="Show Circular Construction background">
+          <img src="hero-circular-construction-4k.png" alt="Circular Construction domain">
+          <span class="io-hero-frame-label">Circular Construction</span>
+        </button>
       </div>
     </div>
   </header>
