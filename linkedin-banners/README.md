@@ -28,7 +28,7 @@ LinkedIn places the company logo over the **bottom-left** of the banner. These i
 | `iostring-linkedin-banner-move-forward-1128x191.png` | 1128 x 191 px |
 | `iostring-linkedin-banner-move-forward-3840x960.png` | 3840 x 960 px (4K master) |
 
-Large, readable **Move forward with us** text on a subtle blended background from all three domains. Best for company page visitors who need to read the tagline at a glance.
+Large, readable **Move forward with us** text, right-aligned on sharp 4K domain imagery (Financial Services, Energy, Circular Construction). No background blur. Best for company page visitors who need to read the tagline at a glance.
 
 ### 3-frame collage (all domains in one banner)
 
