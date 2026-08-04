@@ -27,7 +27,7 @@ LinkedIn places the company logo over the **bottom-left** of the banner. These i
 | **`iostring-linkedin-banner-collage-1584x396.png`** | 1584 x 396 px (upload this) |
 | `iostring-linkedin-banner-collage-1128x191.png` | 1128 x 191 px |
 
-Single banner with Financial Services, Energy, and Circular Construction side by side, matching the website hero slideshow.
+Single banner with Financial Services, Energy, and Circular Construction side by side, with the tagline **Move forward with us** centered across the frame.
 
 ### Individual domain banners
 
