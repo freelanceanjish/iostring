@@ -2,6 +2,21 @@
 
 Ready-to-upload cover images for the iostring LinkedIn company page, matched to the website hero domains.
 
+## Quick download (repo root)
+
+These copies sit at the **top level** of the repo next to the hero images, so they are easy to find on GitHub:
+
+| File | Use |
+|------|-----|
+| **`iostring-linkedin-banner-move-forward-4k.png`** | 3840 x 960 px master (4K) |
+| **`iostring-linkedin-banner-move-forward-linkedin.png`** | 1584 x 396 px — upload this to LinkedIn |
+
+GitHub links (main branch):
+
+- [4K master](https://github.com/freelanceanjish/iostring/blob/main/iostring-linkedin-banner-move-forward-4k.png)
+- [LinkedIn upload size](https://github.com/freelanceanjish/iostring/blob/main/iostring-linkedin-banner-move-forward-linkedin.png)
+- [All banner files folder](https://github.com/freelanceanjish/iostring/tree/main/linkedin-banners)
+
 ## LinkedIn specifications
 
 | Setting | Value |
