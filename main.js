@@ -4,14 +4,52 @@ document.addEventListener("DOMContentLoaded", function () {
   const navigationContainer = document.getElementById("mainNav");
   const actionMenuLinks = document.querySelectorAll(".nav-item");
   const structuralPageSections = document.querySelectorAll("section, header");
+  const heroSlides = document.querySelectorAll(".io-hero-slide");
+  const heroFrames = document.querySelectorAll(".io-hero-frame");
+  let activeSlideIndex = 0;
+  let heroSlideTimer;
 
-  window.addEventListener("scroll", () => {
-    // Nav bar sizing adjustment metrics
+  function setHeroSlide(index) {
+    activeSlideIndex = index;
+    heroSlides.forEach((slide, i) => slide.classList.toggle("active", i === index));
+    heroFrames.forEach((frame, i) => {
+      frame.classList.toggle("active", i === index);
+      frame.setAttribute("aria-pressed", i === index ? "true" : "false");
+    });
+  }
+
+  function startHeroRotation() {
+    clearInterval(heroSlideTimer);
+    heroSlideTimer = setInterval(() => {
+      setHeroSlide((activeSlideIndex + 1) % heroSlides.length);
+    }, 7000);
+  }
+
+  heroFrames.forEach((frame) => {
+    frame.setAttribute("aria-pressed", frame.classList.contains("active") ? "true" : "false");
+    frame.addEventListener("click", () => {
+      setHeroSlide(Number(frame.getAttribute("data-slide")));
+      startHeroRotation();
+    });
+  });
+
+  if (heroSlides.length) {
+    setHeroSlide(0);
+    startHeroRotation();
+  }
+
+  function updateNavState() {
     if (window.scrollY > 40) {
       navigationContainer.classList.add("scrolled");
+      navigationContainer.classList.remove("hero-top");
     } else {
       navigationContainer.classList.remove("scrolled");
+      navigationContainer.classList.add("hero-top");
     }
+  }
+
+  window.addEventListener("scroll", () => {
+    updateNavState();
 
     // Process section intersection coordinates dynamically
     let targetedSectionId = "";
@@ -29,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  updateNavState();
 
   // 2. Programmatic On-Scroll Reveal Observer Engine
   const animateReveals = document.querySelectorAll('.io-reveal, .io-reveal-left, .io-reveal-right');
