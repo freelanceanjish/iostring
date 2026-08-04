@@ -35,15 +35,18 @@
   </nav>
 
   <header class="io-hero" id="hero">
-    <div class="io-hero-bg" aria-hidden="true">
-      <div class="io-hero-slide active" style="background-image: url('hero-financial-services-4k.png');"></div>
-      <div class="io-hero-slide" style="background-image: url('hero-energy-domain-4k.png');"></div>
-      <div class="io-hero-slide" style="background-image: url('hero-circular-construction-4k.png');"></div>
-      <div class="io-hero-bg-overlay"></div>
-    </div>
+    <div class="io-hero-stage">
+      <div class="io-hero-bg" aria-hidden="true">
+        <div class="io-hero-bg-track">
+          <div class="io-hero-slide" style="background-image: url('hero-financial-services-4k.png');"></div>
+          <div class="io-hero-slide" style="background-image: url('hero-energy-domain-4k.png');"></div>
+          <div class="io-hero-slide" style="background-image: url('hero-circular-construction-4k.png');"></div>
+        </div>
+        <div class="io-hero-bg-overlay"></div>
+      </div>
 
-    <div class="io-hero-inner">
       <div class="io-hero-copy io-reveal">
+        <p class="io-hero-domain-label" id="heroDomainLabel">Financial Services</p>
         <h1>Your partner in <br><em>digital & agile</em><br>transformation.</h1>
         <p class="io-hero-sub">We help organisations navigate digital transformation through agile business practices, technology adoption, and deep human coaching, from startups to enterprise, and across education, financial services, civil infrastructure, sustainability, and circular construction.</p>
         
@@ -55,25 +58,22 @@
           <span class="io-hero-tag t5">Circular Construction</span>
         </div>
 
+        <div class="io-hero-slide-controls" id="heroSlideControls">
+          <button type="button" class="io-hero-dot active" data-slide="0" aria-label="Financial Services slide">
+            <span class="io-hero-dot-label">Financial Services</span>
+          </button>
+          <button type="button" class="io-hero-dot" data-slide="1" aria-label="Energy slide">
+            <span class="io-hero-dot-label">Energy</span>
+          </button>
+          <button type="button" class="io-hero-dot" data-slide="2" aria-label="Circular Construction slide">
+            <span class="io-hero-dot-label">Circular Construction</span>
+          </button>
+        </div>
+
         <div class="io-hero-actions">
           <a href="#circular-construction" class="io-btn-primary">Circular Construction Model</a>
           <a href="#services" class="io-btn-text io-btn-text-light">Explore Services</a>
         </div>
-      </div>
-      
-      <div class="io-hero-frames io-reveal-right io-delay-1">
-        <button type="button" class="io-hero-frame active" data-slide="0" aria-label="Show Financial Services background">
-          <img src="hero-financial-services-4k.png" alt="Financial Services domain">
-          <span class="io-hero-frame-label">Financial Services</span>
-        </button>
-        <button type="button" class="io-hero-frame" data-slide="1" aria-label="Show Energy domain background">
-          <img src="hero-energy-domain-4k.png" alt="Energy domain">
-          <span class="io-hero-frame-label">Energy</span>
-        </button>
-        <button type="button" class="io-hero-frame" data-slide="2" aria-label="Show Circular Construction background">
-          <img src="hero-circular-construction-4k.png" alt="Circular Construction domain">
-          <span class="io-hero-frame-label">Circular Construction</span>
-        </button>
       </div>
     </div>
   </header>

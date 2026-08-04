@@ -5,35 +5,44 @@ document.addEventListener("DOMContentLoaded", function () {
   const actionMenuLinks = document.querySelectorAll(".nav-item");
   const structuralPageSections = document.querySelectorAll("section, header");
   const heroSlides = document.querySelectorAll(".io-hero-slide");
-  const heroFrames = document.querySelectorAll(".io-hero-frame");
+  const heroDots = document.querySelectorAll(".io-hero-dot");
+  const heroTrack = document.querySelector(".io-hero-bg-track");
+  const heroDomainLabel = document.getElementById("heroDomainLabel");
+  const slideDomains = ["Financial Services", "Energy", "Circular Construction"];
   let activeSlideIndex = 0;
   let heroSlideTimer;
 
   function setHeroSlide(index) {
     activeSlideIndex = index;
-    heroSlides.forEach((slide, i) => slide.classList.toggle("active", i === index));
-    heroFrames.forEach((frame, i) => {
-      frame.classList.toggle("active", i === index);
-      frame.setAttribute("aria-pressed", i === index ? "true" : "false");
+    if (heroTrack) {
+      heroTrack.style.transform = `translateX(-${index * 100}%)`;
+    }
+    heroSlides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
+    heroDots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+      dot.setAttribute("aria-pressed", i === index ? "true" : "false");
     });
+    if (heroDomainLabel) {
+      heroDomainLabel.textContent = slideDomains[index];
+    }
   }
 
   function startHeroRotation() {
     clearInterval(heroSlideTimer);
     heroSlideTimer = setInterval(() => {
       setHeroSlide((activeSlideIndex + 1) % heroSlides.length);
-    }, 7000);
+    }, 6000);
   }
 
-  heroFrames.forEach((frame) => {
-    frame.setAttribute("aria-pressed", frame.classList.contains("active") ? "true" : "false");
-    frame.addEventListener("click", () => {
-      setHeroSlide(Number(frame.getAttribute("data-slide")));
+  heroDots.forEach((dot) => {
+    dot.setAttribute("aria-pressed", dot.classList.contains("active") ? "true" : "false");
+    dot.addEventListener("click", () => {
+      setHeroSlide(Number(dot.getAttribute("data-slide")));
       startHeroRotation();
     });
   });
 
-  if (heroSlides.length) {
+  if (heroSlides.length && heroTrack) {
     setHeroSlide(0);
     startHeroRotation();
   }
