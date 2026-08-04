@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const actionMenuLinks = document.querySelectorAll(".nav-item");
   const structuralPageSections = document.querySelectorAll("section, header");
   const heroSlides = document.querySelectorAll(".io-hero-slide");
-  const heroDots = document.querySelectorAll(".io-hero-dot");
   const heroTrack = document.querySelector(".io-hero-bg-track");
   const heroDomainLabel = document.getElementById("heroDomainLabel");
   const slideDomains = ["Financial Services", "Energy", "Circular Construction"];
@@ -18,10 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
       heroTrack.style.transform = `translateX(-${index * 100}%)`;
     }
     heroSlides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
-    heroDots.forEach((dot, i) => {
-      dot.classList.toggle("active", i === index);
-      dot.setAttribute("aria-pressed", i === index ? "true" : "false");
-    });
     if (heroDomainLabel) {
       heroDomainLabel.textContent = slideDomains[index];
     }
@@ -33,14 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
       setHeroSlide((activeSlideIndex + 1) % heroSlides.length);
     }, 6000);
   }
-
-  heroDots.forEach((dot) => {
-    dot.setAttribute("aria-pressed", dot.classList.contains("active") ? "true" : "false");
-    dot.addEventListener("click", () => {
-      setHeroSlide(Number(dot.getAttribute("data-slide")));
-      startHeroRotation();
-    });
-  });
 
   if (heroSlides.length && heroTrack) {
     setHeroSlide(0);
