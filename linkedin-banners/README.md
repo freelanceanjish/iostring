@@ -20,8 +20,19 @@ LinkedIn places the company logo over the **bottom-left** of the banner. These i
 
 ## Files
 
-| Domain | High-res (upload this) | Display size |
-|--------|------------------------|--------------|
+### Recommended: 3-frame collage (all domains in one banner)
+
+| File | Size |
+|------|------|
+| **`iostring-linkedin-banner-collage-1584x396.png`** | 1584 x 396 px (upload this) |
+| `iostring-linkedin-banner-collage-1128x191.png` | 1128 x 191 px |
+
+Single banner with Financial Services, Energy, and Circular Construction side by side, matching the website hero slideshow.
+
+### Individual domain banners
+
+| Domain | High-res | Display size |
+|--------|----------|--------------|
 | Financial Services | `iostring-linkedin-banner-financial-services-1584x396.png` | `iostring-linkedin-banner-financial-services-1128x191.png` |
 | Energy | `iostring-linkedin-banner-energy-1584x396.png` | `iostring-linkedin-banner-energy-1128x191.png` |
 | Circular Construction | `iostring-linkedin-banner-circular-construction-1584x396.png` | `iostring-linkedin-banner-circular-construction-1128x191.png` |
@@ -30,7 +41,5 @@ LinkedIn places the company logo over the **bottom-left** of the banner. These i
 
 1. Go to your [iostring LinkedIn company page](https://www.linkedin.com/company/iostring/).
 2. Click **Edit cover image** (admin access required).
-3. Upload one of the `1584x396` banner files.
+3. Upload **`iostring-linkedin-banner-collage-1584x396.png`** (or a single-domain banner if you prefer).
 4. Adjust crop if needed and save.
-
-Rotate banners when you want to highlight a different domain, or pick the one that best fits your current focus.
