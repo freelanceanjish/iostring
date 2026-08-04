@@ -20,11 +20,21 @@ LinkedIn places the company logo over the **bottom-left** of the banner. These i
 
 ## Files
 
-### Recommended: 3-frame collage (all domains in one banner)
+### Recommended: big tagline banner
 
 | File | Size |
 |------|------|
-| **`iostring-linkedin-banner-collage-1584x396.png`** | 1584 x 396 px (upload this) |
+| **`iostring-linkedin-banner-move-forward-1584x396.png`** | 1584 x 396 px (upload this) |
+| `iostring-linkedin-banner-move-forward-1128x191.png` | 1128 x 191 px |
+| `iostring-linkedin-banner-move-forward-3840x960.png` | 3840 x 960 px (4K master) |
+
+Large, readable **Move forward with us** text on a subtle blended background from all three domains. Best for company page visitors who need to read the tagline at a glance.
+
+### 3-frame collage (all domains in one banner)
+
+| File | Size |
+|------|------|
+| `iostring-linkedin-banner-collage-1584x396.png` | 1584 x 396 px |
 | `iostring-linkedin-banner-collage-1128x191.png` | 1128 x 191 px |
 
 Single banner with Financial Services, Energy, and Circular Construction side by side, with the tagline **Move forward with us** centered across the frame.
@@ -41,5 +51,5 @@ Single banner with Financial Services, Energy, and Circular Construction side by
 
 1. Go to your [iostring LinkedIn company page](https://www.linkedin.com/company/iostring/).
 2. Click **Edit cover image** (admin access required).
-3. Upload **`iostring-linkedin-banner-collage-1584x396.png`** (or a single-domain banner if you prefer).
+3. Upload **`iostring-linkedin-banner-move-forward-1584x396.png`** (or another banner from the list below if you prefer).
 4. Adjust crop if needed and save.
