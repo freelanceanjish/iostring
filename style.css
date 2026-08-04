@@ -330,6 +330,11 @@ body {
 .io-circular-ceremony { background: var(--teal-ghost); border: 1px solid rgba(15,118,110,0.12); border-radius: var(--r-lg); padding: 32px 28px; }
 .io-circular-ceremony h4 { font-family: var(--font-display); font-size: 18px; margin-bottom: 10px; color: var(--ink); }
 .io-circular-ceremony p { font-size: 14px; color: var(--ink-muted); line-height: 1.6; font-weight: 300; }
+.io-circular-it { margin-bottom: 32px; }
+.io-circular-it-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.io-circular-it-card { background: var(--white); border: 1px solid rgba(5,7,12,0.08); border-left: 4px solid var(--purple-brand); border-radius: var(--r-md); padding: 28px 24px; }
+.io-circular-it-card h4 { font-family: var(--font-display); font-size: 17px; margin-bottom: 10px; color: var(--ink); }
+.io-circular-it-card p { font-size: 13px; color: var(--ink-muted); line-height: 1.6; font-weight: 300; }
 .io-circular-outcomes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
 .io-circular-outcome { background: var(--ink); color: var(--white); border-radius: var(--r-lg); padding: 28px 24px; }
 .io-circular-outcome strong { display: block; font-family: var(--font-display); font-size: 18px; margin-bottom: 8px; color: var(--white); }
@@ -345,7 +350,7 @@ body {
   .io-hero-tags, .io-hero-actions { justify-content: center; }
   .io-hero-art { display: none; }
   .io-dx-layout, .io-story-layout, .io-services-header, .io-ai-callout, .io-circular-intro { grid-template-columns: 1fr; gap: 40px; }
-  .io-pillars-grid, .io-how-steps, .io-who-grid, .io-nl-problems, .io-bridge-grid, .io-nl-sectors, .io-circular-steps, .io-circular-outcomes { grid-template-columns: 1fr; }
+  .io-pillars-grid, .io-how-steps, .io-who-grid, .io-nl-problems, .io-bridge-grid, .io-nl-sectors, .io-circular-steps, .io-circular-outcomes, .io-circular-it-grid { grid-template-columns: 1fr; }
   .io-circular-ceremony-grid { grid-template-columns: 1fr; }
   .io-circular-cta { flex-direction: column; align-items: flex-start; }
   .io-footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
