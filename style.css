@@ -27,6 +27,36 @@ body {
 
 .io-container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px); }
 
+/* Right-aligned editorial layout (matches CTA / banner) */
+.io-layout-right .io-hero-inner,
+.io-layout-right .io-bento-head,
+.io-layout-right .io-global-inner,
+.io-layout-right .io-story-inner,
+.io-layout-right .io-cta-inner {
+  text-align: right;
+  margin-left: auto;
+  width: 100%;
+}
+.io-layout-right .io-hero-lead,
+.io-layout-right .io-global-lead,
+.io-layout-right .io-story-quote,
+.io-layout-right .io-story-text {
+  margin-left: auto;
+}
+.io-layout-right .io-hero-actions,
+.io-layout-right .io-cta-actions {
+  justify-content: flex-end;
+}
+.io-layout-right .io-bento-cell { text-align: right; align-items: flex-end; }
+.io-layout-right .io-bento-num { align-self: flex-end; }
+.io-layout-right .io-bento-cell p { margin-left: auto; }
+.io-layout-right .io-service-stack-title,
+.io-layout-right .io-service-list { text-align: right; }
+.io-layout-right .io-global-offices { margin-left: auto; width: fit-content; max-width: 100%; }
+.io-layout-right .io-office p { margin-left: auto; }
+.io-layout-right .io-footer-inner { justify-content: flex-end; text-align: right; }
+.io-layout-right .io-footer-inner .io-footer-logo { order: 2; }
+
 /* Reveal */
 .io-reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
 .io-reveal.io-visible { opacity: 1; transform: none; }
@@ -185,6 +215,7 @@ body {
   padding: clamp(64px, 8vw, 96px) 0;
   background: var(--purple); color: var(--white);
 }
+.io-cta-inner { max-width: var(--max); }
 .io-cta h2 {
   font-family: var(--font-display); font-weight: 800;
   font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.04em; line-height: 0.95;
@@ -199,7 +230,8 @@ body {
 
 @media (max-width: 900px) {
   .io-hero { grid-template-columns: 1fr; min-height: auto; }
-  .io-hero-visual { min-height: 48vh; order: -1; }
+  .io-hero-visual { min-height: 48vh; }
+  .io-layout-right .io-global-offices { width: 100%; }
   .io-nav-links { display: none; }
   .io-bento-grid { grid-template-columns: 1fr; }
   .io-bento-wide { grid-column: auto; }
