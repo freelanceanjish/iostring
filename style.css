@@ -27,35 +27,18 @@ body {
 
 .io-container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px); }
 
-/* Right-aligned editorial layout (matches CTA / banner) */
-.io-layout-right .io-hero-inner,
-.io-layout-right .io-bento-head,
-.io-layout-right .io-global-inner,
-.io-layout-right .io-story-inner,
-.io-layout-right .io-cta-inner {
+/* Right-aligned landing (hero) and ending (CTA) banners only */
+.io-banner-right.io-hero .io-hero-inner,
+.io-banner-right.io-cta .io-cta-inner {
   text-align: right;
   margin-left: auto;
   width: 100%;
 }
-.io-layout-right .io-hero-lead,
-.io-layout-right .io-global-lead,
-.io-layout-right .io-story-quote,
-.io-layout-right .io-story-text {
-  margin-left: auto;
-}
-.io-layout-right .io-hero-actions,
-.io-layout-right .io-cta-actions {
+.io-banner-right.io-hero .io-hero-lead { margin-left: auto; }
+.io-banner-right.io-hero .io-hero-actions,
+.io-banner-right.io-cta .io-cta-actions {
   justify-content: flex-end;
 }
-.io-layout-right .io-bento-cell { text-align: right; align-items: flex-end; }
-.io-layout-right .io-bento-num { align-self: flex-end; }
-.io-layout-right .io-bento-cell p { margin-left: auto; }
-.io-layout-right .io-service-stack-title,
-.io-layout-right .io-service-list { text-align: right; }
-.io-layout-right .io-global-offices { margin-left: auto; width: fit-content; max-width: 100%; }
-.io-layout-right .io-office p { margin-left: auto; }
-.io-layout-right .io-footer-inner { justify-content: flex-end; text-align: right; }
-.io-layout-right .io-footer-inner .io-footer-logo { order: 2; }
 
 /* Reveal */
 .io-reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
@@ -153,16 +136,10 @@ body {
 .io-bento-cell {
   padding: clamp(28px, 4vw, 40px); border: 2px solid var(--ink); border-radius: 4px;
   background: var(--paper); min-height: 200px;
-  display: flex; flex-direction: column; justify-content: flex-end;
 }
 .io-bento-wide { grid-column: 1 / -1; min-height: 180px; }
 .io-bento-accent { background: var(--ink); color: var(--white); border-color: var(--ink); }
 .io-bento-accent p { color: rgba(255,255,255,0.72); }
-.io-bento-num {
-  font-family: var(--font-display); font-weight: 800; font-size: 0.875rem;
-  color: var(--purple); margin-bottom: auto; padding-bottom: 24px;
-}
-.io-bento-accent .io-bento-num { color: var(--purple); opacity: 0.9; }
 .io-bento-cell h3 {
   font-family: var(--font-display); font-weight: 700; font-size: 1.5rem;
   letter-spacing: -0.02em; margin-bottom: 10px;
@@ -231,7 +208,6 @@ body {
 @media (max-width: 900px) {
   .io-hero { grid-template-columns: 1fr; min-height: auto; }
   .io-hero-visual { min-height: 48vh; }
-  .io-layout-right .io-global-offices { width: 100%; }
   .io-nav-links { display: none; }
   .io-bento-grid { grid-template-columns: 1fr; }
   .io-bento-wide { grid-column: auto; }
