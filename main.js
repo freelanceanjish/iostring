@@ -4,36 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const navigationContainer = document.getElementById("mainNav");
   const actionMenuLinks = document.querySelectorAll(".nav-item");
   const structuralPageSections = document.querySelectorAll("section, header");
-  const heroSlides = document.querySelectorAll(".io-hero-slide");
-  const heroTrack = document.querySelector(".io-hero-bg-track");
-  const heroDomainLabel = document.getElementById("heroDomainLabel");
-  const slideDomains = ["Financial Services", "Energy", "Circular Construction"];
-  let activeSlideIndex = 0;
-  let heroSlideTimer;
-
-  function setHeroSlide(index) {
-    activeSlideIndex = index;
-    if (heroTrack) {
-      heroTrack.style.transform = `translateX(-${index * 100}%)`;
-    }
-    heroSlides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
-    if (heroDomainLabel) {
-      heroDomainLabel.textContent = slideDomains[index];
-    }
-  }
-
-  function startHeroRotation() {
-    clearInterval(heroSlideTimer);
-    heroSlideTimer = setInterval(() => {
-      setHeroSlide((activeSlideIndex + 1) % heroSlides.length);
-    }, 6000);
-  }
-
-  if (heroSlides.length && heroTrack) {
-    setHeroSlide(0);
-    startHeroRotation();
-  }
-
   function updateNavState() {
     if (window.scrollY > 40) {
       navigationContainer.classList.add("scrolled");
