@@ -99,7 +99,7 @@ body {
 .io-hero-visual { position: relative; min-height: min(50vh, 420px); }
 .io-hero-photo {
   position: absolute; inset: 0; border-radius: 4px;
-  background-size: cover; background-position: center;
+  background-size: cover; background-position: 55% center;
   border: 2px solid var(--ink);
 }
 
