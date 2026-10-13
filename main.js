@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.getElementById("mainNav");
-  const jumpLinks = document.querySelectorAll(".nav-item, .subnav-item");
+  const jumpLinks = document.querySelectorAll(".nav-item");
   const sections = document.querySelectorAll("section[id], header[id]");
-  const scrollOffset = 128;
+  const scrollOffset = 96;
 
   function onScroll() {
     if (nav) {
