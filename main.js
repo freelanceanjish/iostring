@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.getElementById("mainNav");
-  const navLinks = document.querySelectorAll(".nav-item");
+  const jumpLinks = document.querySelectorAll(".nav-item, .subnav-item");
   const sections = document.querySelectorAll("section[id], header[id]");
+  const scrollOffset = 128;
 
   function onScroll() {
     if (nav) {
@@ -10,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let activeId = "";
     sections.forEach((section) => {
-      if (window.scrollY >= section.offsetTop - 120) {
+      if (window.scrollY >= section.offsetTop - scrollOffset) {
         activeId = section.id;
       }
     });
-    navLinks.forEach((link) => {
+    jumpLinks.forEach((link) => {
       link.classList.toggle("active", link.getAttribute("href") === `#${activeId}`);
     });
   }
