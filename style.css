@@ -151,27 +151,31 @@ body {
 }
 
 .io-stage-hero {
-  background: var(--ink);
-  color: var(--white);
-  padding: calc(var(--nav-h) + var(--subnav-h) + 40px) 0 clamp(56px, 8vh, 88px);
+  background: var(--white);
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding: calc(var(--nav-h) + var(--subnav-h) + 48px) 0 clamp(64px, 9vh, 96px);
 }
 
-.io-hero-layout {
+.io-hero-editorial {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
-  gap: clamp(28px, 4vw, 56px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 38rem);
+  gap: clamp(32px, 5vw, 72px);
   align-items: end;
-  min-height: min(72vh, 680px);
+  min-height: min(58vh, 560px);
 }
 
-.io-hero-figure {
-  margin: 0;
-  line-height: 0;
-}
-.io-hero-figure img {
-  width: 100%;
-  height: auto;
-  display: block;
+.io-hero-graphic {
+  align-self: stretch;
+  min-height: 220px;
+  border-left: 4px solid var(--purple);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(125deg, #000 35%, transparent 78%);
+  -webkit-mask-image: linear-gradient(125deg, #000 35%, transparent 78%);
 }
 
 .io-stage-copy {
@@ -182,9 +186,9 @@ body {
 .io-eyebrow {
   font-size: 0.8125rem;
   font-weight: 700;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #c77dff;
+  color: var(--purple);
   margin-bottom: 20px;
 }
 
@@ -200,7 +204,7 @@ body {
 .io-hero-dek {
   font-size: 1.125rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--muted);
   margin-bottom: 32px;
 }
 
@@ -259,45 +263,6 @@ body {
   font-size: 0.9375rem;
   color: var(--muted);
   line-height: 1.5;
-}
-
-/* Concept band — full-bleed visual chapter */
-.io-concept-band {
-  position: relative;
-  min-height: min(56vh, 520px);
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: clamp(40px, 6vw, 64px);
-  background: var(--ink);
-}
-.io-concept-visual {
-  position: absolute;
-  inset: 0;
-}
-.io-concept-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.65;
-}
-.io-concept-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(0deg, var(--ink) 0%, transparent 45%),
-    linear-gradient(90deg, var(--ink) 0%, transparent 35%);
-}
-.io-concept-caption {
-  position: relative;
-  z-index: 1;
-}
-.io-concept-caption p {
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
-  letter-spacing: -0.03em;
-  color: var(--white);
-  max-width: 28rem;
 }
 
 /* Offerings grid — reference capability list */
@@ -438,8 +403,8 @@ body {
 @media (max-width: 900px) {
   .io-nav-menu { display: none; }
   .io-subnav-label { display: none; }
-  .io-hero-layout { grid-template-columns: 1fr; min-height: 0; }
-  .io-hero-figure { order: -1; max-width: 420px; }
+  .io-hero-editorial { grid-template-columns: 1fr; min-height: 0; }
+  .io-hero-graphic { min-height: 140px; max-width: 100%; }
   .io-metrics-row { grid-template-columns: 1fr 1fr; }
   .io-insights-grid { grid-template-columns: 1fr; }
   .io-offering,
