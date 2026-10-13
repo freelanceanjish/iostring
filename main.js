@@ -32,6 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateNavState();
 
+  const heroVideo = document.querySelector(".io-hero-video");
+  if (heroVideo && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    heroVideo.pause();
+    heroVideo.removeAttribute("autoplay");
+  }
+
   const animateReveals = document.querySelectorAll(".io-reveal");
   const scrollIntersectionObserver = new IntersectionObserver(
     (entries) => {
