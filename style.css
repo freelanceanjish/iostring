@@ -95,7 +95,7 @@ body {
   width: 100%;
   min-height: min(52vh, 480px);
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
   gap: clamp(20px, 3vw, 36px);
   align-items: center;
 }
@@ -104,39 +104,35 @@ body {
   position: relative;
   grid-column: 1;
   grid-row: 1;
-  min-height: min(48vh, 440px);
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: min(52vh, 540px);
   z-index: 0;
   pointer-events: none;
-}
-
-.io-hero-backdrop::before {
-  content: '';
-  position: absolute;
-  inset: 12% -8% -8% 8%;
-  background: radial-gradient(ellipse at 60% 40%, var(--purple-soft) 0%, transparent 70%);
-  z-index: -1;
-  filter: blur(24px);
+  background: var(--paper);
 }
 
 .io-hero-photo {
   position: absolute;
   inset: 0;
-  border-radius: var(--radius-lg);
-  background-size: cover;
-  background-position: 48% center;
+  border-radius: 0;
+  background-color: var(--paper);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
   border: none;
-  box-shadow: var(--shadow-hero);
+  box-shadow: none;
 }
 
 .io-hero-photo-fade {
   position: absolute;
   inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(
-    90deg,
-    transparent 72%,
-    rgba(244, 242, 237, 0.25) 100%
-  );
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, var(--paper) 0%, transparent 14%),
+    linear-gradient(270deg, var(--paper) 0%, transparent 22%),
+    linear-gradient(180deg, var(--paper) 0%, transparent 12%),
+    linear-gradient(0deg, var(--paper) 0%, transparent 12%);
 }
 
 .io-hero-inner {
@@ -347,16 +343,17 @@ body {
   .io-hero-backdrop {
     grid-column: 1;
     grid-row: 1;
-    min-height: 0;
-    height: min(42vh, 320px);
+    max-height: none;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+  .io-hero-photo {
+    background-position: center center;
   }
   .io-hero-photo-fade {
-    background: linear-gradient(
-      180deg,
-      transparent 55%,
-      rgba(244, 242, 237, 0.5) 85%,
-      var(--paper) 100%
-    );
+    background:
+      linear-gradient(180deg, var(--paper) 0%, transparent 16%),
+      linear-gradient(0deg, var(--paper) 0%, transparent 20%);
   }
   .io-hero-inner {
     grid-column: 1;
