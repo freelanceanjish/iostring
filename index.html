@@ -29,7 +29,12 @@
   </nav>
 
   <header class="io-hero io-banner-right" id="hero">
-    <div class="io-hero-glow" aria-hidden="true"></div>
+    <div class="io-hero-media" aria-hidden="true">
+      <video class="io-hero-video" autoplay muted loop playsinline poster="hero-landing-poster.jpg">
+        <source src="hero-landing-loop.mp4" type="video/mp4">
+      </video>
+      <div class="io-hero-media-fade"></div>
+    </div>
     <div class="io-container io-hero-inner io-reveal">
       <p class="io-kicker">USA · Australia · Europe</p>
       <h1>Agility, Data<br>&amp; AI.</h1>
@@ -42,42 +47,29 @@
   </header>
 
   <section class="io-band io-band-purple" id="services">
-    <div class="io-container io-band-inner io-reveal">
+    <div class="io-container io-reveal">
       <p class="io-band-label">What we do</p>
-      <div class="io-pillars">
-        <article class="io-pillar">
+      <div class="io-service-flow">
+        <div class="io-service-item">
           <h2>Agile delivery</h2>
           <p>Coaches in the room for PI planning, releases, and teams spread across US, Australian, and European hours.</p>
-        </article>
-        <article class="io-pillar">
+        </div>
+        <div class="io-service-item">
           <h2>Data engineering</h2>
           <p>Pipelines and platforms your risk and finance teams can explain to a regulator.</p>
-        </article>
-        <article class="io-pillar">
+        </div>
+        <div class="io-service-item">
           <h2>AI governance</h2>
           <p>Rollout with names on the decisions, not a policy PDF that nobody uses.</p>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="io-band io-band-paper" id="global">
-    <div class="io-container io-locations io-reveal">
-      <div class="io-location">
-        <span class="io-location-tag">IN</span>
-        <strong>Pune</strong>
-        <p>Engineering, data, and delivery teams.</p>
-      </div>
-      <div class="io-location">
-        <span class="io-location-tag">EU</span>
-        <strong>Utrecht</strong>
-        <p>Client leadership and workshops.</p>
-      </div>
-      <div class="io-location io-location-wide">
-        <span class="io-location-tag">Clients</span>
-        <strong>United States · Australia · Europe</strong>
-        <p>On site with your leadership when the programme needs it.</p>
-      </div>
+    <div class="io-container io-global-line io-reveal">
+      <p class="io-global-strong">Pune · Utrecht · United States · Australia · Europe</p>
+      <p class="io-global-sub">Engineering in India. Leadership in the Netherlands. On site with you when the programme needs it.</p>
     </div>
   </section>
 
