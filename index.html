@@ -9,83 +9,80 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav class="io-nav" id="mainNav">
-    <div class="io-shell io-nav-row">
+    <div class="io-bar io-nav-bar">
       <a href="#" class="io-logo">
         <img src="iostring.png" alt="iostring" width="120" height="32">
       </a>
-      <ul class="io-nav-menu">
+      <ul class="io-nav-links">
+        <li><a href="#services" class="nav-item">Services</a></li>
         <li><a href="#agile" class="nav-item">Agile</a></li>
         <li><a href="#data" class="nav-item">Data</a></li>
         <li><a href="#ai-governance" class="nav-item">AI governance</a></li>
         <li><a href="#about" class="nav-item">About</a></li>
       </ul>
-      <a href="#contact" class="io-nav-btn">Let's talk</a>
+      <a href="#contact" class="io-nav-cta">Contact</a>
     </div>
   </nav>
 
   <header class="io-hero" id="hero">
-    <div class="io-hero-bg" aria-hidden="true"></div>
-    <div class="io-shell io-hero-layout io-reveal">
-      <div class="io-hero-visual" aria-hidden="true">
-        <div class="io-hero-brand">
-          <img src="iostring.png" alt="" width="240" height="64" class="io-hero-logo">
-        </div>
-      </div>
-      <div class="io-hero-copy">
-        <p class="io-geo">United States · Australia · Europe · India · Netherlands</p>
-        <h1>Agility, Data &amp; AI for regulated programmes.</h1>
-        <p class="io-hero-lead">iostring embeds senior agile coaches, data engineers, and AI governance leads with your teams in banking and insurance. Same people from kickoff through handover.</p>
-        <div class="io-hero-actions">
-          <a href="#contact" class="io-btn io-btn-light">Talk to us</a>
-          <a href="#services" class="io-btn io-btn-ghost">View services</a>
-        </div>
-      </div>
+    <div class="io-bar io-hero-bar io-reveal">
+      <p class="io-meta">United States · Australia · Europe · India · Netherlands</p>
+      <h1>Agility, Data &amp; AI for regulated programmes.</h1>
+      <p class="io-dek">iostring embeds senior agile coaches, data engineers, and AI governance leads with your teams in banking and insurance. Same people from kickoff through handover.</p>
+      <p class="io-hero-links">
+        <a href="#contact">Talk to us</a>
+        <span class="io-dot" aria-hidden="true">·</span>
+        <a href="#services">View services</a>
+      </p>
     </div>
   </header>
 
-  <section class="io-band io-band-white" id="services">
-    <div class="io-shell io-reveal">
-      <header class="io-band-head">
-        <h2>Three services. One delivery team.</h2>
-        <p>Pick the discipline you need, or run all three on the same programme when agility, data, and AI must move together.</p>
-      </header>
-      <div class="io-service-cards">
-        <a class="io-service-card" href="#agile">
-          <span class="io-service-num">01</span>
-          <h3>Agile delivery</h3>
-          <p>Programme coaching, PI planning, and release leadership when the date is public and regulators are watching.</p>
-        </a>
-        <a class="io-service-card" href="#data">
-          <span class="io-service-num">02</span>
-          <h3>Data engineering</h3>
-          <p>Pipelines, lineage, quality, and platform work so reporting, supervision, and AI share data people can explain.</p>
-        </a>
-        <a class="io-service-card" href="#ai-governance">
-          <span class="io-service-num">03</span>
-          <h3>AI governance</h3>
-          <p>Operating model, policy, and controlled rollout with risk and compliance before tools reach production.</p>
-        </a>
-      </div>
+  <hr class="io-rule io-bar">
+
+  <section id="services">
+    <div class="io-bar io-reveal">
+      <h2 class="io-section-title">Three services. One delivery team.</h2>
+      <p class="io-lead">Pick the discipline you need, or run all three on the same programme when agility, data, and AI must move together.</p>
+      <ul class="io-index">
+        <li>
+          <a href="#agile">
+            <span class="io-index-title">Agile delivery</span>
+            <span class="io-index-desc">Programme coaching, PI planning, and release leadership when the date is public and regulators are watching.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#data">
+            <span class="io-index-title">Data engineering</span>
+            <span class="io-index-desc">Pipelines, lineage, quality, and platform work so reporting, supervision, and AI share data people can explain.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#ai-governance">
+            <span class="io-index-title">AI governance</span>
+            <span class="io-index-desc">Operating model, policy, and controlled rollout with risk and compliance before tools reach production.</span>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <section class="io-band io-band-panel" id="agile">
-    <div class="io-shell io-service-detail io-reveal">
-      <div class="io-service-detail-head">
-        <span class="io-service-num">01</span>
-        <h2>Agile delivery at programme scale</h2>
-        <p class="io-service-tagline">Cadence that survives steering pressure, not slide-deck agile.</p>
-      </div>
-      <div class="io-service-body">
-        <div class="io-service-col">
-          <h4>What we do</h4>
+  <hr class="io-rule io-bar">
+
+  <article class="io-article" id="agile">
+    <div class="io-bar io-reveal">
+      <p class="io-label">Service 01</p>
+      <h2>Agile delivery at programme scale</h2>
+      <p class="io-tagline">Cadence that survives steering pressure, not slide-deck agile.</p>
+      <div class="io-columns">
+        <div>
+          <h3>What we do</h3>
           <ul>
             <li>Portfolio and release-train coaching for multi-team programmes</li>
             <li>PI planning, dependency management, and readiness for go/no-go calls</li>
@@ -93,8 +90,8 @@
             <li>Alignment between business, IT, and control functions on what ships when</li>
           </ul>
         </div>
-        <div class="io-service-col">
-          <h4>Typical engagements</h4>
+        <div>
+          <h3>Typical engagements</h3>
           <ul>
             <li>Steering-room support ahead of a regulatory or market release</li>
             <li>Recovery when cadence broke after reorganisation or vendor change</li>
@@ -103,18 +100,18 @@
         </div>
       </div>
     </div>
-  </section>
+  </article>
 
-  <section class="io-band io-band-white io-band-panel" id="data">
-    <div class="io-shell io-service-detail io-reveal">
-      <div class="io-service-detail-head">
-        <span class="io-service-num">02</span>
-        <h2>Data engineering for supervision and AI</h2>
-        <p class="io-service-tagline">Trustworthy data paths for finance, risk, reporting, and governed AI use cases.</p>
-      </div>
-      <div class="io-service-body">
-        <div class="io-service-col">
-          <h4>What we do</h4>
+  <hr class="io-rule io-bar">
+
+  <article class="io-article" id="data">
+    <div class="io-bar io-reveal">
+      <p class="io-label">Service 02</p>
+      <h2>Data engineering for supervision and AI</h2>
+      <p class="io-tagline">Trustworthy data paths for finance, risk, reporting, and governed AI use cases.</p>
+      <div class="io-columns">
+        <div>
+          <h3>What we do</h3>
           <ul>
             <li>Batch and streaming pipelines with documented lineage and ownership</li>
             <li>Data quality rules and monitoring for supervisory and management reporting</li>
@@ -122,8 +119,8 @@
             <li>Foundations so AI initiatives reuse the same curated, explainable datasets</li>
           </ul>
         </div>
-        <div class="io-service-col">
-          <h4>Typical engagements</h4>
+        <div>
+          <h3>Typical engagements</h3>
           <ul>
             <li>Replacing brittle spreadsheets with engineered feeds into risk and finance</li>
             <li>Preparing data domains before an AI pilot or model rollout</li>
@@ -132,18 +129,18 @@
         </div>
       </div>
     </div>
-  </section>
+  </article>
 
-  <section class="io-band io-band-panel" id="ai-governance">
-    <div class="io-shell io-service-detail io-reveal">
-      <div class="io-service-detail-head">
-        <span class="io-service-num">03</span>
-        <h2>AI governance in production teams</h2>
-        <p class="io-service-tagline">Named owners, updated ceremonies, and compliance in the loop before go-live.</p>
-      </div>
-      <div class="io-service-body">
-        <div class="io-service-col">
-          <h4>What we do</h4>
+  <hr class="io-rule io-bar">
+
+  <article class="io-article" id="ai-governance">
+    <div class="io-bar io-reveal">
+      <p class="io-label">Service 03</p>
+      <h2>AI governance in production teams</h2>
+      <p class="io-tagline">Named owners, updated ceremonies, and compliance in the loop before go-live.</p>
+      <div class="io-columns">
+        <div>
+          <h3>What we do</h3>
           <ul>
             <li>AI operating model: roles, forums, and decision rights on the programme</li>
             <li>Use-case intake, risk tiering, and approval paths with your compliance team</li>
@@ -151,8 +148,8 @@
             <li>Handover artefacts: inventories, policies in practice, and monitoring expectations</li>
           </ul>
         </div>
-        <div class="io-service-col">
-          <h4>Typical engagements</h4>
+        <div>
+          <h3>Typical engagements</h3>
           <ul>
             <li>First wave of generative AI in operations with audit-ready documentation</li>
             <li>Scaling from pilot to multiple business lines without losing control</li>
@@ -161,46 +158,48 @@
         </div>
       </div>
     </div>
-  </section>
+  </article>
 
-  <section class="io-band io-band-white" id="delivery">
-    <div class="io-shell io-delivery io-reveal">
-      <h2>How we deliver</h2>
-      <div class="io-delivery-grid">
-        <article>
+  <hr class="io-rule io-bar">
+
+  <section id="delivery">
+    <div class="io-bar io-reveal">
+      <h2 class="io-section-title">How we deliver</h2>
+      <div class="io-stack">
+        <div class="io-stack-item">
           <h3>On your programme</h3>
           <p>Seniors embed with your product, engineering, risk, and compliance teams. We join ceremonies, code reviews, steering calls, and governance forums as needed.</p>
-        </article>
-        <article>
+        </div>
+        <div class="io-stack-item">
           <h3>From India and the Netherlands</h3>
           <p>Engineering depth from India. European client leadership from the Netherlands. On-site presence in the United States, Australia, and Europe when the programme requires it.</p>
-        </article>
-        <article>
+        </div>
+        <div class="io-stack-item">
           <h3>Through handover</h3>
           <p>We stay until internal teams can run cadence, data paths, and AI controls without us. No bait-and-switch to junior staff mid-flight.</p>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="io-band" id="about">
-    <div class="io-shell io-about io-reveal">
-      <h2>Practitioners first</h2>
-      <p>iostring is a specialist consultancy for supervised financial services. Founders and leads have run multi-country agile programmes and early AI adoption in regulated environments. You work with us directly.</p>
+  <hr class="io-rule io-bar">
+
+  <section id="about">
+    <div class="io-bar io-reveal">
+      <h2 class="io-section-title">Practitioners first</h2>
+      <p class="io-prose">iostring is a specialist consultancy for supervised financial services. Founders and leads have run multi-country agile programmes and early AI adoption in regulated environments. You work with us directly.</p>
     </div>
   </section>
 
   <section class="io-cta" id="contact">
-    <div class="io-shell io-reveal">
-      <div class="io-rail-right io-cta-copy">
-        <h2>Say hello.</h2>
-        <a class="io-btn io-btn-email" href="mailto:hello@iostring.com">hello@iostring.com</a>
-      </div>
+    <div class="io-bar io-cta-bar io-reveal">
+      <h2>Say hello.</h2>
+      <a class="io-email" href="mailto:hello@iostring.com">hello@iostring.com</a>
     </div>
   </section>
 
   <footer class="io-foot">
-    <div class="io-shell io-foot-row">
+    <div class="io-bar io-foot-bar">
       <span>&copy; 2026 iostring Technology &amp; Consulting</span>
       <a href="https://www.linkedin.com/company/iostring/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
