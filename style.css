@@ -14,6 +14,12 @@
   --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --sans: 'Sora', system-ui, -apple-system, sans-serif;
   --grad: linear-gradient(115deg, #8b00ff 0%, #5b8cff 52%, #3ecbff 100%);
+  --corner-light: radial-gradient(
+    ellipse 90% 70% at 100% 0%,
+    rgba(244, 242, 237, 0.16) 0%,
+    rgba(180, 200, 230, 0.08) 28%,
+    transparent 62%
+  );
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -77,7 +83,7 @@ a:focus-visible {
   inset: 0 0 auto 0;
   z-index: 100;
   height: var(--nav-h);
-  background: rgba(5, 7, 12, 0.72);
+  background: rgba(5, 7, 12, 0.55);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-bottom: 1px solid transparent;
@@ -85,7 +91,7 @@ a:focus-visible {
 }
 .io-nav.scrolled {
   border-bottom-color: var(--line);
-  background: rgba(5, 7, 12, 0.94);
+  background: rgba(5, 7, 12, 0.9);
 }
 
 .io-nav-bar {
@@ -140,12 +146,32 @@ a:focus-visible {
   align-items: flex-end;
   padding: calc(var(--nav-h) + 56px) 0 80px;
   border-bottom: 1px solid var(--line);
+  overflow: hidden;
   background:
-    radial-gradient(ellipse 70% 55% at 100% 0%, rgba(30, 48, 80, 0.35), transparent 55%),
-    var(--ink);
+    var(--corner-light),
+    linear-gradient(160deg, #1a1f2a 0%, var(--ink) 48%, #030508 100%);
+}
+
+.io-hero::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: min(70vw, 720px);
+  height: min(70vw, 720px);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(244, 242, 237, 0.22) 0%,
+    rgba(244, 242, 237, 0.06) 35%,
+    transparent 68%
+  );
+  pointer-events: none;
 }
 
 .io-hero-layout {
+  position: relative;
+  z-index: 1;
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -261,13 +287,18 @@ a:focus-visible {
 }
 
 .io-section {
+  position: relative;
   padding: clamp(72px, 10vw, 112px) 0;
   border-bottom: 1px solid var(--line);
-  background: var(--ink);
+  background:
+    radial-gradient(ellipse 55% 40% at 100% 0%, rgba(244, 242, 237, 0.04), transparent 55%),
+    var(--ink);
 }
 
 .io-section-alt {
-  background: linear-gradient(180deg, var(--ink-2), var(--ink));
+  background:
+    radial-gradient(ellipse 50% 45% at 0% 100%, rgba(244, 242, 237, 0.035), transparent 50%),
+    linear-gradient(180deg, #0c111a 0%, var(--ink) 100%);
 }
 
 .io-section-head {
@@ -341,21 +372,10 @@ a:focus-visible {
 .io-service-grid li::marker { color: var(--cyan); }
 
 .io-service {
-  display: grid;
-  grid-template-columns: 48px 1fr;
-  gap: clamp(16px, 3vw, 28px);
   padding: 36px 0;
   border-top: 1px solid var(--line);
 }
 .io-service:last-child { padding-bottom: 0; }
-
-.io-service-num {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: var(--muted);
-  padding-top: 8px;
-}
 
 .io-service-body h3 {
   font-family: var(--serif);
@@ -401,22 +421,20 @@ a:focus-visible {
 }
 
 .io-cta {
+  position: relative;
+  overflow: hidden;
   padding: clamp(88px, 12vw, 128px) 0;
   border-bottom: 1px solid var(--line);
-  background: var(--ink-2);
+  background:
+    radial-gradient(ellipse 70% 80% at 100% 100%, rgba(244, 242, 237, 0.1), transparent 55%),
+    var(--ink-2);
 }
-
-.io-cta-layout {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: clamp(28px, 5vw, 56px);
-}
-
-.io-move-forward-cta { margin: 0; }
 
 .io-cta-inner {
+  position: relative;
+  z-index: 1;
   max-width: 34rem;
+  margin-left: auto;
   text-align: right;
 }
 
@@ -453,6 +471,7 @@ a:focus-visible {
   padding: 32px 0 48px;
   font-size: 0.8125rem;
   color: var(--muted);
+  background: var(--ink);
 }
 .io-foot-bar {
   display: flex;
@@ -490,7 +509,6 @@ a:focus-visible {
   }
   .io-model,
   .io-service-grid { grid-template-columns: 1fr; }
-  .io-service { grid-template-columns: 36px 1fr; }
   .io-hero-layout {
     flex-direction: column;
     align-items: flex-start;
@@ -499,11 +517,8 @@ a:focus-visible {
     order: -1;
     margin-bottom: 12px;
   }
-  .io-cta-layout {
-    flex-direction: column;
-    align-items: flex-start;
-  }
   .io-cta-inner {
+    margin-left: 0;
     text-align: left;
     max-width: none;
   }
