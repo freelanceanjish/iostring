@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 48" fill="none" role="img" aria-label="Move forward with us">
+  <defs>
+    <linearGradient id="mf" x1="0" y1="24" x2="56" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8b00ff"/>
+      <stop offset="1" stop-color="#3ecbff"/>
+    </linearGradient>
+  </defs>
+  <!-- Same geometry as brand mark  do not stretch -->
+  <path d="M4 10 L18 24 L4 38" stroke="url(#mf)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.45"/>
+  <path d="M18 10 L32 24 L18 38" stroke="url(#mf)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.72"/>
+  <path d="M32 10 L46 24 L32 38" stroke="url(#mf)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
