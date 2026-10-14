@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 48" fill="none" role="img" aria-label="iostring">
+  <defs>
+    <linearGradient id="ioChev" x1="0" y1="24" x2="56" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8b00ff"/>
+      <stop offset="1" stop-color="#3ecbff"/>
+    </linearGradient>
+  </defs>
+  <path d="M4 10 L18 24 L4 38" stroke="url(#ioChev)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 10 L32 24 L18 38" stroke="url(#ioChev)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 10 L46 24 L32 38" stroke="url(#ioChev)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="33" fill="#f4f2ed" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="28" font-weight="600" letter-spacing="-0.04em">iostring</text>
+</svg>
