@@ -448,7 +448,7 @@ a:focus-visible {
 .io-cta {
   padding: clamp(88px, 12vw, 130px) 0;
   background:
-    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(139, 0, 255, 0.12), transparent 55%),
+    radial-gradient(ellipse 55% 50% at 85% 30%, rgba(30, 48, 80, 0.45), transparent 55%),
     var(--ink);
   border-bottom: 1px solid var(--line);
 }
