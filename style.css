@@ -341,11 +341,6 @@ a:focus-visible {
   transform: translateY(-1px);
 }
 
-.io-logo-row img.io-logo-color {
-  opacity: 0.92;
-  height: 34px;
-}
-
 .io-section {
   position: relative;
   padding: clamp(72px, 10vw, 112px) 0;
