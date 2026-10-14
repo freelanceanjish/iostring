@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="gStroke" x1="80" y1="120" x2="1120" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8b00ff" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#5b8cff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#3ecbff" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="gSoft" x1="200" y1="80" x2="1000" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8b00ff" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#3ecbff" stop-opacity="0.12"/>
+    </linearGradient>
+    <radialGradient id="gGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(780 320) rotate(90) scale(420 380)">
+      <stop stop-color="#8b00ff" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#05070c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="#05070c"/>
+  <ellipse cx="780" cy="320" rx="420" ry="380" fill="url(#gGlow)"/>
+
+  <!-- soft constellation arcs -->
+  <path d="M120 700 C280 520, 420 480, 560 420 C720 350, 820 240, 980 180" stroke="url(#gSoft)" stroke-width="1.5"/>
+  <path d="M80 240 C260 280, 400 360, 540 520 C680 680, 860 720, 1080 640" stroke="url(#gSoft)" stroke-width="1.25"/>
+  <path d="M200 120 C360 200, 480 300, 620 360 C800 440, 940 560, 1100 760" stroke="url(#gSoft)" stroke-width="1"/>
+
+  <!-- primary chevron lattice (brand motif) -->
+  <g stroke="url(#gStroke)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M420 210 L520 310 L420 410" stroke-width="10" opacity="0.35"/>
+    <path d="M520 210 L620 310 L520 410" stroke-width="12" opacity="0.55"/>
+    <path d="M620 210 L720 310 L620 410" stroke-width="14" opacity="0.85"/>
+    <path d="M720 210 L820 310 L720 410" stroke-width="16"/>
+
+    <path d="M480 470 L560 550 L480 630" stroke-width="8" opacity="0.4"/>
+    <path d="M560 470 L640 550 L560 630" stroke-width="10" opacity="0.65"/>
+    <path d="M640 470 L720 550 L640 630" stroke-width="12" opacity="0.9"/>
+  </g>
+
+  <!-- node network -->
+  <g fill="#f4f2ed">
+    <circle cx="220" cy="180" r="3.5" opacity="0.55"/>
+    <circle cx="340" cy="300" r="3" opacity="0.4"/>
+    <circle cx="900" cy="220" r="4" opacity="0.7"/>
+    <circle cx="980" cy="360" r="3" opacity="0.45"/>
+    <circle cx="860" cy="560" r="3.5" opacity="0.5"/>
+    <circle cx="1040" cy="680" r="3" opacity="0.4"/>
+    <circle cx="300" cy="620" r="3" opacity="0.35"/>
+  </g>
+  <g stroke="#f4f2ed" stroke-opacity="0.18" stroke-width="1">
+    <path d="M220 180 L340 300 L520 310"/>
+    <path d="M900 220 L980 360 L860 560 L1040 680"/>
+    <path d="M720 410 L860 560"/>
+    <path d="M300 620 L480 630 L560 550"/>
+  </g>
+
+  <!-- geographic orbit marks -->
+  <g stroke="#3ecbff" stroke-opacity="0.35" fill="none">
+    <circle cx="760" cy="360" r="210" stroke-width="1" stroke-dasharray="2 10"/>
+    <circle cx="760" cy="360" r="290" stroke-width="1" stroke-dasharray="1 14" opacity="0.7"/>
+  </g>
+</svg>

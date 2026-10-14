@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function onScroll() {
     if (nav) {
-      nav.classList.toggle("scrolled", window.scrollY > 10);
+      nav.classList.toggle("scrolled", window.scrollY > 8);
     }
 
     let activeId = "";
