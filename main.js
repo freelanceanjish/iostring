@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const nav = document.getElementById("mainNav");
   const jumpLinks = document.querySelectorAll(".nav-item");
   const sections = document.querySelectorAll("section[id], header[id]");
-  const scrollOffset = 100;
+  const scrollOffset = 110;
 
   function onScroll() {
     if (nav) {
-      nav.classList.toggle("scrolled", window.scrollY > 8);
+      nav.classList.toggle("scrolled", window.scrollY > 10);
     }
 
     let activeId = "";
@@ -16,12 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Map deep service sections to the Services nav link
-    const servicesIds = new Set(["agile", "data", "ai-governance", "delivery"]);
+    const serviceIds = new Set(["agile", "data", "ai"]);
     jumpLinks.forEach((link) => {
       const href = link.getAttribute("href");
       let active = href === `#${activeId}`;
-      if (href === "#agile" && servicesIds.has(activeId)) active = true;
+      if (href === "#services" && serviceIds.has(activeId)) active = true;
       link.classList.toggle("active", active);
     });
   }
@@ -39,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     },
-    { threshold: 0.1, rootMargin: "0px 0px -8% 0px" }
+    { threshold: 0.08, rootMargin: "0px 0px -6% 0px" }
   );
   reveals.forEach((el) => observer.observe(el));
 });
