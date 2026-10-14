@@ -433,8 +433,10 @@ a:focus-visible {
 .io-cta-inner {
   position: relative;
   z-index: 1;
+  width: 100%;
   max-width: 34rem;
   margin-left: auto;
+  margin-right: 0;
   text-align: right;
 }
 
