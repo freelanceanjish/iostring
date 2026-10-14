@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.getElementById("mainNav");
   const jumpLinks = document.querySelectorAll(".nav-item");
-  const sections = document.querySelectorAll("section[id], header[id]");
-  const scrollOffset = 96;
+  const sections = document.querySelectorAll("section[id], header[id], article[id]");
+  const scrollOffset = 100;
 
   function onScroll() {
     if (nav) {
-      nav.classList.toggle("scrolled", window.scrollY > 16);
+      nav.classList.toggle("scrolled", window.scrollY > 12);
     }
 
     let activeId = "";
@@ -20,8 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  window.addEventListener("scroll", onScroll);
+  window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
+
+  const drawer = document.querySelector(".io-nav-drawer");
+  if (drawer) {
+    drawer.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => drawer.removeAttribute("open"));
+    });
+  }
 
   const reveals = document.querySelectorAll(".io-reveal");
   const observer = new IntersectionObserver(
@@ -33,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     },
-    { threshold: 0.12 }
+    { threshold: 0.08, rootMargin: "0px 0px -5% 0px" }
   );
   reveals.forEach((el) => observer.observe(el));
 });
