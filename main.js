@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.getElementById("mainNav");
   const jumpLinks = document.querySelectorAll(".nav-item");
-  const sections = document.querySelectorAll("section[id], header[id], article[id]");
+  const sections = document.querySelectorAll("section[id], header[id]");
   const scrollOffset = 100;
 
   function onScroll() {
     if (nav) {
-      nav.classList.toggle("scrolled", window.scrollY > 12);
+      nav.classList.toggle("scrolled", window.scrollY > 8);
     }
 
     let activeId = "";
@@ -15,20 +15,19 @@ document.addEventListener("DOMContentLoaded", function () {
         activeId = section.id;
       }
     });
+
+    // Map deep service sections to the Services nav link
+    const servicesIds = new Set(["agile", "data", "ai-governance", "delivery"]);
     jumpLinks.forEach((link) => {
-      link.classList.toggle("active", link.getAttribute("href") === `#${activeId}`);
+      const href = link.getAttribute("href");
+      let active = href === `#${activeId}`;
+      if (href === "#agile" && servicesIds.has(activeId)) active = true;
+      link.classList.toggle("active", active);
     });
   }
 
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
-
-  const drawer = document.querySelector(".io-nav-drawer");
-  if (drawer) {
-    drawer.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => drawer.removeAttribute("open"));
-    });
-  }
 
   const reveals = document.querySelectorAll(".io-reveal");
   const observer = new IntersectionObserver(
@@ -40,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     },
-    { threshold: 0.08, rootMargin: "0px 0px -5% 0px" }
+    { threshold: 0.1, rootMargin: "0px 0px -8% 0px" }
   );
   reveals.forEach((el) => observer.observe(el));
 });
