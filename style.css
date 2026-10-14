@@ -102,6 +102,7 @@ a:focus-visible {
   display: block;
   height: 28px;
   width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .io-nav-links {
@@ -191,25 +192,28 @@ a:focus-visible {
 
 .io-move-forward {
   flex: 0 0 auto;
+  position: relative;
+  z-index: 2;
   margin: 0 0 8px;
   text-align: center;
 }
 
 .io-move-forward img {
   display: block;
-  width: 112px;
-  height: 96px;
+  width: 140px;
+  height: 120px;
   margin: 0 auto;
   object-fit: contain;
+  filter: drop-shadow(0 0 18px rgba(139, 0, 255, 0.45));
 }
 
 .io-move-forward figcaption {
-  margin-top: 12px;
-  font-size: 0.75rem;
+  margin-top: 14px;
+  font-size: 0.8125rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--text);
 }
 
 .io-eyebrow {
@@ -553,6 +557,7 @@ a:focus-visible {
   display: block;
   height: 24px;
   width: auto;
+  filter: brightness(0) invert(1);
   opacity: 0.9;
 }
 .io-foot-meta {
